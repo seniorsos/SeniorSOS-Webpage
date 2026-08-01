@@ -1,0 +1,14 @@
+SeniorSOS.health — pliki gotowe do wgrania
+1 sierpnia 2026
+
+W tym folderze jest JEDEN folder: SeniorSOS-strona
+
+To jest kompletna strona. Nic w niej nie musisz zmieniać
+ani otwierać w edytorze. Jest gotowa w 100%.
+
+WGRYWASZ ZAWARTOSC folderu SeniorSOS-strona.
+Czyli: wchodzisz do srodka, zaznaczasz wszystko (Cmd+A)
+i to przeciagasz. Nie sam folder.
+
+Newsletter dziala dzis jako adres mailowy - zapisujesz ludzi
+recznie. Beehiiv podepniemy pozniej, jednym ruchem.

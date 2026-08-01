@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kontakt — SeniorSOS.health | Paweł Rutkowski</title>
+<meta name="description" content="Napisz do SeniorSOS.health. Propozycje tematów, współpraca edukacyjna, uwagi do strony. To nie jest kanał pomocy medycznej — w nagłych przypadkach dzwoń 112.">
+<link rel="canonical" href="https://seniorsos.health/kontakt/">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="author" content="Paweł Rutkowski">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:site_name" content="SeniorSOS.health">
+<meta property="og:title" content="Kontakt — SeniorSOS.health | Paweł Rutkowski">
+<meta property="og:description" content="Napisz do SeniorSOS.health. Propozycje tematów, współpraca edukacyjna, uwagi do strony. To nie jest kanał pomocy medycznej — w nagłych przypadkach dzwoń 112.">
+<meta property="og:url" content="https://seniorsos.health/kontakt/">
+<meta property="og:image" content="https://seniorsos.health/assets/og-default.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/znak.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/znak.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/tokens.css">
+<link rel="stylesheet" href="/css/main.css">
+
+</head>
+<body>
+
+<a class="skip" href="#tresc">Przejdź do treści</a>
+<header class="nav">
+  <div class="wrap nav__in">
+    <a class="brand" href="/">SeniorSOS<span>.health</span></a>
+    <button class="nav__toggle" aria-expanded="false" aria-controls="menu">Menu</button>
+    <ul class="nav__links" id="menu">
+      <li><a href="/szybka-pomoc/">Szybka pomoc</a></li>
+      <li><a href="/blog/">Poradniki</a></li>
+      <li><a href="/materialy/">Materiały</a></li>
+      <li><a href="/o-mnie/">O mnie</a></li>
+      <li><a href="/kontakt/" aria-current="page">Kontakt</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="tresc">
+  <section class="phead">
+    <div class="wrap wrap--narrow">
+      <p class="eyebrow">Kontakt</p>
+      <h1>Napisz. Odpowiadam na wszystko.</h1>
+      <p class="phead__lead">Zwykle w ciągu dwóch, trzech dni. Jeżeli sytuacja jest pilna — nie pisz do mnie, tylko zadzwoń pod 112 albo skontaktuj się z lekarzem.</p>
+    </div>
+  </section>
+
+  <section class="section--tight">
+    <div class="wrap wrap--narrow">
+
+      <div class="alarm">
+        <h2>To nie jest kanał pomocy medycznej</h2>
+        <p>Nie odpowiadam na pytania o leki, dawki ani objawy konkretnej osoby. Nie stawiam diagnoz i nie oceniam, czy coś jest groźne. W sytuacji nagłej dzwoń natychmiast.</p>
+        <span class="alarm__num">112</span>
+      </div>
+
+      <form class="form form--page" name="kontakt" method="POST"
+            data-netlify="true" netlify-honeypot="bot-field" action="/wiadomosc-wyslana/">
+        <input type="hidden" name="form-name" value="kontakt">
+        <p class="form__hp"><label>Nie wypełniaj: <input name="bot-field"></label></p>
+
+        <div>
+          <label for="imie">Jak się do ciebie zwracać</label>
+          <input id="imie" type="text" name="imie" autocomplete="given-name" required>
+        </div>
+        <div>
+          <label for="email">Adres e-mail</label>
+          <input id="email" type="email" name="email" autocomplete="email" required>
+        </div>
+        <div>
+          <label for="temat">O co chodzi</label>
+          <input id="temat" type="text" name="temat" placeholder="np. propozycja tematu, współpraca, uwaga do strony">
+        </div>
+        <div>
+          <label for="tresc">Treść wiadomości</label>
+          <textarea id="tresc" name="tresc" required placeholder="Nie musisz pisać ładnie. Wystarczy konkretnie."></textarea>
+        </div>
+
+        <label class="form__consent">
+          <input type="checkbox" name="zgoda" value="tak" required>
+          <span>Zgadzam się na przetwarzanie mojego adresu e-mail w celu udzielenia odpowiedzi. <a href="/status-i-regulamin/#prywatnosc">Jak chronię dane</a>.</span>
+        </label>
+
+        <button class="btn btn--primary" type="submit">Wyślij wiadomość</button>
+      </form>
+
+      <div class="quick" style="margin-top:2.6rem">
+        <h3>Wolisz zwykłego maila?</h3>
+        <p><a href="mailto:pomoc@seniorsos.health">pomoc@seniorsos.health</a> — działa tak samo.</p>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p class="disclaimer"><strong>Ważne:</strong> materiały na tej stronie mają charakter edukacyjny i nie zastępują konsultacji lekarskiej. Nie znajdziesz tu zaleceń dotyczących leków ani dawkowania. W sytuacji zagrożenia życia dzwoń pod numer <strong>112</strong>.</p>
+    <div class="foot__grid">
+      <div>
+        <p class="foot__brand">SeniorSOS.health</p>
+        <p class="foot__tag">Zawsze blisko.<br>Zawsze bezpiecznie.</p>
+        <p><a href="mailto:pomoc@seniorsos.health">pomoc@seniorsos.health</a></p>
+      </div>
+      <div>
+        <h4>Strona</h4>
+        <ul>
+          <li><a href="/szybka-pomoc/">Szybka pomoc</a></li>
+          <li><a href="/blog/">Poradniki</a></li>
+          <li><a href="/materialy/">Materiały do pobrania</a></li>
+          <li><a href="/o-mnie/">O mnie</a></li>
+          <li><a href="/kontakt/">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Gdzie jeszcze</h4>
+        <ul>
+          <li><a href="https://www.youtube.com/@SeniorSOShealth" rel="me noopener">YouTube</a></li>
+          <li><a href="https://www.facebook.com/seniorsos.health" rel="me noopener">Facebook</a></li>
+          <li><a href="https://www.linkedin.com/in/seniorsos-health" rel="me noopener">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/seniorsos_health" rel="me noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__legal">
+      <span>© 2026 SeniorSOS.health · Paweł Rutkowski · Kraków</span>
+      <span><a href="/status-i-regulamin/">Status, prywatność i regulamin</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var t=document.querySelector('.nav__toggle'), m=document.getElementById('menu');
+  if(!t||!m) return;
+  t.addEventListener('click',function(){
+    var open=m.classList.toggle('is-open');
+    t.setAttribute('aria-expanded',open);
+  });
+})();
+</script>
+
+</body>
+</html>

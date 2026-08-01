@@ -1,0 +1,89 @@
+# ═══════════════════════════════════════════════════════════
+#  netlify.toml — SeniorSOS.health
+#  Aktualizacja: 2026-07-29
+#
+#  UWAGA — najważniejsza zmiana wobec poprzedniej wersji:
+#  usunięto regułę [[redirects]] from="/*" to="/index.html" status=200.
+#  Ta reguła powodowała, że KAŻDY błędny adres zwracał stronę główną
+#  ze statusem 200 zamiast 404. Dla wyszukiwarek i silników AI oznacza
+#  to nieskończoną liczbę duplikatów tej samej treści pod różnymi
+#  adresami — i brak sygnału, że strona nie istnieje.
+#  Teraz błędny adres zwraca 404.html ze statusem 404, tak jak powinien.
+# ═══════════════════════════════════════════════════════════
+
+[build]
+  publish = "."
+  command = ""
+
+# ── PRZEKIEROWANIA ───────────────────────────────────────
+# www → bez www (jedna wersja kanoniczna)
+[[redirects]]
+  from   = "https://www.seniorsos.health/*"
+  to     = "https://seniorsos.health/:splat"
+  status = 301
+  force  = true
+
+# stare adresy z .html → nowe foldery
+[[redirects]]
+  from   = "/szybka-pomoc.html"
+  to     = "/szybka-pomoc/"
+  status = 301
+[[redirects]]
+  from   = "/blog.html"
+  to     = "/blog/"
+  status = 301
+[[redirects]]
+  from   = "/o-mnie.html"
+  to     = "/o-mnie/"
+  status = 301
+[[redirects]]
+  from   = "/kontakt.html"
+  to     = "/kontakt/"
+  status = 301
+[[redirects]]
+  from   = "/pdf-do-pobrania.html"
+  to     = "/materialy/"
+  status = 301
+[[redirects]]
+  from   = "/polityka-prywatnosci.html"
+  to     = "/status-i-regulamin/"
+  status = 301
+[[redirects]]
+  from   = "/regulamin.html"
+  to     = "/status-i-regulamin/"
+  status = 301
+
+# ── NAGŁÓWKI ─────────────────────────────────────────────
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
+    # form-action: dziś tylko 'self' (formularz kontaktowy).
+    # Gdy podepniemy Beehiiv, dopiszemy tu jego adres — inaczej
+    # przeglądarka po cichu zablokuje wysyłkę formularza newslettera.
+    Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; script-src 'self' 'unsafe-inline'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';"
+
+# ── CACHE ────────────────────────────────────────────────
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# ── FORMULARZE ───────────────────────────────────────────
+# Netlify Forms obsługuje TYLKO formularz "kontakt" (/kontakt/).
+# Newsletter działa dziś jako adres mailowy (zapis ręczny).
+# Docelowo pójdzie bezpośrednio do Beehiiv — nigdy przez Zapiera.

@@ -1,0 +1,94 @@
+# ═══════════════════════════════════════════════════════════
+#  robots.txt — SeniorSOS.health
+#  Aktualizacja: 2026-07-29
+#
+#  Decyzja strategiczna (11.07.2026): wpuszczamy WSZYSTKIE roboty,
+#  w tym roboty AI. Dziesięcioletnia strategia marki zakłada obecność
+#  w pamięci modeli językowych. Treść edukacyjna ma się rozchodzić.
+#  Nie blokujemy niczego bez osobnej, świadomej decyzji.
+# ═══════════════════════════════════════════════════════════
+
+User-agent: *
+Allow: /
+
+# wyszukiwarka Google
+User-agent: Googlebot
+Allow: /
+
+# obrazy Google
+User-agent: Googlebot-Image
+Allow: /
+
+# Gemini / AI Overviews
+User-agent: Google-Extended
+Allow: /
+
+# wyszukiwarka Bing
+User-agent: Bingbot
+Allow: /
+
+# OpenAI — trening i pamięć modelu
+User-agent: GPTBot
+Allow: /
+
+# OpenAI — wyszukiwanie w ChatGPT
+User-agent: OAI-SearchBot
+Allow: /
+
+# ChatGPT — wejście na żądanie użytkownika
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic — trening i pamięć modelu
+User-agent: ClaudeBot
+Allow: /
+
+# Claude — wejście na żądanie użytkownika
+User-agent: Claude-User
+Allow: /
+
+# Claude — wyszukiwanie
+User-agent: Claude-SearchBot
+Allow: /
+
+# Perplexity — indeks
+User-agent: PerplexityBot
+Allow: /
+
+# Perplexity — wejście na żądanie użytkownika
+User-agent: Perplexity-User
+Allow: /
+
+# Apple / Siri / Spotlight
+User-agent: Applebot
+Allow: /
+
+# Apple — modele generatywne
+User-agent: Applebot-Extended
+Allow: /
+
+# Amazon / Alexa
+User-agent: Amazonbot
+Allow: /
+
+# Meta AI
+User-agent: meta-externalagent
+Allow: /
+
+# ByteDance
+User-agent: Bytespider
+Allow: /
+
+# Common Crawl — źródło wielu zbiorów treningowych
+User-agent: CCBot
+Allow: /
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+
+# Yandex
+User-agent: YandexBot
+Allow: /
+
+Sitemap: https://seniorsos.health/sitemap.xml

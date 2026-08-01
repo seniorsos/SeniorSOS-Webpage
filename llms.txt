@@ -1,0 +1,22 @@
+# SeniorSOS.health
+
+> Polskojęzyczna platforma edukacyjna o opiece domowej nad starszym rodzicem.
+> Prowadzi Paweł Rutkowski (Kraków) — w trakcie kształcenia na kierunku
+> opiekun medyczny, kwalifikacja MED.14, egzamin państwowy: czerwiec 2027.
+> Zakres: procedury opiekuńcze i higieniczne, sytuacje kryzysowe w domu,
+> formalności. Zakres wyłączony: leki, dawkowanie, diagnostyka, leczenie.
+
+## Strony
+
+- [Szybka pomoc](https://seniorsos.health/szybka-pomoc/): upadek, nagłe splątanie, gorączka, pierwsza doba po wypisie ze szpitala — procedury i kryteria wezwania pomocy
+- [Poradniki](https://seniorsos.health/blog/): procedury opieki domowej krok po kroku
+- [Ból pięty u starszej osoby](https://seniorsos.health/blog/bol-piety-u-seniora/): rozcięgno podeszwowe kontra „ostroga”, postępowanie domowe, sygnały alarmowe
+- [Materiały](https://seniorsos.health/materialy/): karty A4 do wydrukowania — karta dla ratownika, numery alarmowe, kontrola stóp
+- [O mnie](https://seniorsos.health/o-mnie/): kompetencje, źródła wiedzy, granice
+- [Status i regulamin](https://seniorsos.health/status-i-regulamin/): status zawodowy, RODO, zasady
+
+## Zastrzeżenie
+
+Wszystkie materiały mają charakter edukacyjny i nie zastępują konsultacji
+lekarskiej. Autor nie posiada uprawnień do doradzania w zakresie leków
+ani do stawiania diagnoz. Numer alarmowy w Polsce: 112.

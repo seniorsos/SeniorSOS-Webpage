@@ -1,0 +1,35 @@
+/* ============================================================
+   SeniorSOS.health — TOKENY MARKI
+   System zamrożony 24.07.2026 · wersja 3.0
+   Nie zmieniamy tych wartości bez decyzji o odmrożeniu systemu.
+   ============================================================ */
+:root{
+  /* --- papier i tekst (90% powierzchni) --- */
+  --cream:#F7F2EA;         /* tło główne */
+  --cream-deep:#EFE7DA;    /* tło kart */
+  --bark:#3D2B1F;          /* tekst główny */
+  --ink:var(--bark);
+  --ink-soft:#6B5A4C;      /* tekst pomocniczy */
+  --hairline:#DED4C4;      /* linie */
+
+  /* --- zieleń (7%) --- */
+  --forest:#2D5A4A;        /* pas nocny, akcenty tekstowe */
+  --forest-dark:#22453A;
+  --sage:#A8C4B4;          /* tekst na zieleni */
+  --logo-green:#819984;    /* zieleń logotypu */
+
+  /* --- akcent (3%) — TYLKO rzeczy klikalne --- */
+  --accent:#D1A05E;        /* wyrównany do logotypu */
+  --accent-dark:#BC8C4B;
+  --accent-light:#F6E7D2;  /* tło sekcji newslettera */
+  --accent-ink:#7A5B3E;    /* tekst na tle akcentowym */
+
+  /* --- typografia --- */
+  --display:"Cormorant Garamond",Georgia,serif;
+  --body:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+
+  /* --- siatka --- */
+  --wrap:1140px;
+  --gap:clamp(3.5rem,7vw,7rem);
+  --radius:3px;
+}
