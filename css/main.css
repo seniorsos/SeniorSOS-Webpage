@@ -210,6 +210,30 @@ a{color:inherit}
 .disclaimer{background:rgba(247,242,234,.06);border-left:2px solid var(--accent);padding:1rem 1.2rem;margin:0 0 2.2rem;font-size:.9rem;line-height:1.6;max-width:62em}
 @media(max-width:820px){.foot__grid{grid-template-columns:1fr;gap:2rem}}
 
+/* --- ZDJĘCIE NAGŁÓWKOWE NAD TYTUŁEM --- */
+.article__hero--top{margin:clamp(1.6rem,3vw,2.4rem) 0 0}
+.phead--po-zdjeciu{padding-top:clamp(1.6rem,3vw,2.2rem)}
+
+/* --- TAGI I UDOSTĘPNIANIE --- */
+.postend{border-top:1px solid var(--hairline);margin:2.8rem 0 0;padding:1.8rem 0 0;
+  display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:clamp(1.6rem,4vw,3rem);align-items:start}
+@media(max-width:660px){.postend{grid-template-columns:1fr;gap:1.8rem}}
+.postend__label{font-size:.76rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--forest);margin:0 0 .9rem}
+
+.tags{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;margin:0;padding:0}
+.tag{display:inline-block;font-size:.86rem;line-height:1;padding:.5rem .8rem;border-radius:var(--radius);
+  background:var(--cream-deep);color:var(--ink-soft);border:1px solid var(--hairline)}
+
+.share{display:flex;flex-wrap:wrap;gap:.6rem;list-style:none;margin:0;padding:0}
+.share a,.share button{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;
+  border:1.5px solid var(--hairline);border-radius:var(--radius);background:none;color:var(--ink-soft);
+  cursor:pointer;padding:0;font:inherit;transition:border-color .18s,color .18s,background .18s}
+.share a:hover,.share button:hover{border-color:var(--forest);color:var(--forest);background:var(--cream-deep)}
+.share svg{width:20px;height:20px;fill:currentColor}
+.share__note{font-size:.85rem;color:var(--ink-soft);margin:.9rem 0 0;line-height:1.5}
+.share__ok{color:var(--forest);font-weight:600}
+
 /* --- ZDJĘCIE NAGŁÓWKOWE WPISU --- */
 .article__hero{margin:0 0 clamp(1.8rem,3.5vw,2.6rem)}
 .article__hero img{width:100%;height:auto;display:block;border-radius:var(--radius);background:var(--cream-deep)}
