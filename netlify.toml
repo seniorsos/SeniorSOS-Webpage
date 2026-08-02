@@ -68,10 +68,16 @@
     Content-Security-Policy = "default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; script-src 'self' 'unsafe-inline'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';"
 
 # ── CACHE ────────────────────────────────────────────────
+# Arkusze stylów zmieniają się często, więc przeglądarka ma
+# za każdym razem pytać serwer, czy plik się zmienił. Gdy się nie
+# zmienił, serwer odpowiada "bez zmian" i nie przesyła treści —
+# koszt zerowy, a poprawki widać natychmiast.
+# Wcześniej było tu max-age=604800, czyli siedem dni. To sprawiało,
+# że zmiana wyglądu docierała do ludzi dopiero po tygodniu.
 [[headers]]
   for = "/css/*"
   [headers.values]
-    Cache-Control = "public, max-age=604800"
+    Cache-Control = "public, max-age=0, must-revalidate"
 
 [[headers]]
   for = "/assets/*"

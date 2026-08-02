@@ -222,15 +222,20 @@ a{color:inherit}
   color:var(--forest);margin:0 0 .9rem}
 
 .tags{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;margin:0;padding:0}
+.tags li{margin:0;padding:0;list-style:none}
 .tag{display:inline-block;font-size:.86rem;line-height:1;padding:.5rem .8rem;border-radius:var(--radius);
   background:var(--cream-deep);color:var(--ink-soft);border:1px solid var(--hairline)}
 
-.share{display:flex;flex-wrap:wrap;gap:.6rem;list-style:none;margin:0;padding:0}
-.share a,.share button{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;
+.share{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;list-style:none;margin:0;padding:0}
+.share li{margin:0;padding:0;list-style:none;display:flex}
+.share a,.share button{display:inline-flex;align-items:center;justify-content:center;
+  flex:0 0 auto;width:44px;height:44px;box-sizing:border-box;
   border:1.5px solid var(--hairline);border-radius:var(--radius);background:none;color:var(--ink-soft);
-  cursor:pointer;padding:0;font:inherit;transition:border-color .18s,color .18s,background .18s}
+  cursor:pointer;padding:0;margin:0;font:inherit;line-height:0;text-decoration:none;
+  -webkit-appearance:none;appearance:none;
+  transition:border-color .18s,color .18s,background .18s}
 .share a:hover,.share button:hover{border-color:var(--forest);color:var(--forest);background:var(--cream-deep)}
-.share svg{width:20px;height:20px;fill:currentColor}
+.share svg{width:20px;height:20px;max-width:20px;max-height:20px;flex:0 0 auto;fill:currentColor;display:block}
 .share__note{font-size:.85rem;color:var(--ink-soft);margin:.9rem 0 0;line-height:1.5}
 .share__ok{color:var(--forest);font-weight:600}
 
