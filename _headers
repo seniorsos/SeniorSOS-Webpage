@@ -1,0 +1,20 @@
+# ═══════════════════════════════════════════════════════════
+#  _headers — nagłówki HTTP dla Cloudflare Pages
+#  Zastępuje sekcję [[headers]] z pliku netlify.toml.
+#  Cloudflare czyta ten plik automatycznie z katalogu głównego.
+# ═══════════════════════════════════════════════════════════
+
+# ── Wszystkie adresy ────────────────────────────────────────
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+  Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; script-src 'self' 'unsafe-inline'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';
+  Cache-Control: public, max-age=0, must-revalidate
+
+# ── Obrazy i logotypy: rok, bo się nie zmieniają ────────────
+#  UWAGA: podmiana zdjęcia ZAWSZE pod nową nazwą pliku,
+#  inaczej przez rok część ludzi zobaczy starą wersję.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable

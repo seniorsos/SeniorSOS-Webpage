@@ -1,15 +1,21 @@
-# Rezerwowa wersja przekierowań (Netlify czyta i ten plik, i netlify.toml).
-# Jeśli edytujesz reguły — rób to w netlify.toml, ten plik jest kopią.
+# ═══════════════════════════════════════════════════════════
+#  _redirects — przekierowania dla Cloudflare Pages
+#  Składnia: adres-stary   adres-nowy   kod
+# ═══════════════════════════════════════════════════════════
 
-https://www.seniorsos.health/*   https://seniorsos.health/:splat   301!
+# Stare adresy z .html na nowe foldery
+/szybka-pomoc.html          /szybka-pomoc/          301
+/blog.html                  /blog/                  301
+/o-mnie.html                /o-mnie/                301
+/kontakt.html               /kontakt/               301
+/pdf-do-pobrania.html       /materialy/             301
+/polityka-prywatnosci.html  /status-i-regulamin/    301
+/regulamin.html             /status-i-regulamin/    301
 
-/szybka-pomoc.html         /szybka-pomoc/          301
-/blog.html                 /blog/                  301
-/o-mnie.html               /o-mnie/                301
-/kontakt.html              /kontakt/               301
-/pdf-do-pobrania.html      /materialy/             301
-/polityka-prywatnosci.html /status-i-regulamin/    301
-/regulamin.html            /status-i-regulamin/    301
+# Przekierowanie z www na wersję bez www ustawiamy w panelu
+# Cloudflare (Redirect Rules), bo ten plik obsługuje wyłącznie
+# ścieżki, nie pełne adresy z nazwą domeny.
 
 # CELOWO NIE MA tu reguły /*  /index.html  200
-# (patrz komentarz w netlify.toml)
+# Zamieniałaby każdy błędny adres w kopię strony głównej
+# i rozbijała cytowalność w wyszukiwarkach oraz silnikach AI.

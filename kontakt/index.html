@@ -61,41 +61,21 @@
         <span class="alarm__num">112</span>
       </div>
 
-      <form class="form form--page" name="kontakt" method="POST"
-            data-netlify="true" netlify-honeypot="bot-field" action="/wiadomosc-wyslana/">
-        <input type="hidden" name="form-name" value="kontakt">
-        <p class="form__hp"><label>Nie wypełniaj: <input name="bot-field"></label></p>
-
-        <div>
-          <label for="imie">Jak się do ciebie zwracać</label>
-          <input id="imie" type="text" name="imie" autocomplete="given-name" required>
-        </div>
-        <div>
-          <label for="email">Adres e-mail</label>
-          <input id="email" type="email" name="email" autocomplete="email" required>
-        </div>
-        <div>
-          <label for="temat">O co chodzi</label>
-          <input id="temat" type="text" name="temat" placeholder="np. propozycja tematu, współpraca, uwaga do strony">
-        </div>
-        <div>
-          <label for="tresc">Treść wiadomości</label>
-          <textarea id="tresc" name="tresc" required placeholder="Nie musisz pisać ładnie. Wystarczy konkretnie."></textarea>
-        </div>
-
-        <label class="form__consent">
-          <input type="checkbox" name="zgoda" value="tak" required>
-          <span>Zgadzam się na przetwarzanie mojego adresu e-mail w celu udzielenia odpowiedzi. <a href="/status-i-regulamin/#prywatnosc">Jak chronię dane</a>.</span>
-        </label>
-
-        <button class="btn btn--primary" type="submit">Wyślij wiadomość</button>
-      </form>
-
-      <div class="quick" style="margin-top:2.6rem">
-        <h3>Wolisz zwykłego maila?</h3>
-        <p><a href="mailto:pomoc@seniorsos.health">pomoc@seniorsos.health</a> — działa tak samo.</p>
-        <p>Zanim napiszesz, sprawdź, czy odpowiedzi nie ma już na stronie: <a href="/szybka-pomoc/">Szybka pomoc</a>, <a href="/blog/">Poradniki</a>, <a href="/materialy/">Materiały</a>.</p>
+      <div class="quick" style="margin:0 0 2.4rem">
+        <h2>Napisz na ten adres</h2>
+        <p style="font-size:1.15rem;margin:0 0 1.2rem"><a class="btn btn--primary" href="mailto:pomoc@seniorsos.health">pomoc@seniorsos.health</a></p>
+        <p>Kliknięcie otworzy Twój program pocztowy z już wpisanym adresem. Jeśli nic się nie stanie — skopiuj adres ręcznie.</p>
       </div>
+
+      <p>Nie musisz pisać ładnie ani się przedstawiać. Wystarczy konkretnie: czego dotyczy sprawa i co chciałabyś wiedzieć. Odpowiadam na wszystko, najpóźniej w ciągu dwóch dni — zwykle dużo szybciej.</p>
+
+      <h3>O czym warto napisać</h3>
+      <ul>
+        <li><strong>Propozycja tematu</strong> — jeśli szukałaś czegoś na tej stronie i nie znalazłaś. To najcenniejsze wiadomości, jakie dostaję.</li>
+        <li><strong>Uwaga do treści</strong> — jeśli coś jest niejasne, niepełne albo po prostu źle napisane.</li>
+        <li><strong>Współpraca edukacyjna</strong> — placówki, organizacje, media.</li>
+        <li><strong>Newsletter</strong> — wpisz w temacie słowo NEWSLETTER, a dopiszę Cię ręcznie.</li>
+      </ul>
 
     </div>
   </section>
