@@ -1,1 +1,4 @@
-
+wrangler.jsonc
+.assetsignore
+netlify.toml
+.git
