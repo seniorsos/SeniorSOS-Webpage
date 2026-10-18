@@ -264,3 +264,11 @@ a{color:inherit}
 .prose table{width:100%;border-collapse:collapse;margin:0 0 1.6rem;font-size:.95rem}
 .prose th,.prose td{text-align:left;padding:.75rem .8rem;border-bottom:1px solid var(--hairline);vertical-align:top}
 .prose th{font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;color:var(--forest)}
+
+/* --- POPRAWKA 18.10.2026: newsletter na telefonie ---
+   Na wąskim ekranie dwie kolumny ściskały tekst, a przycisk z adresem
+   mailowym wystawał poza ekran i cała strona przesuwała się w bok.
+   Dodatkowo .news__in nadpisywał boczny margines z .wrap — przywracamy go. */
+.news__in{padding-left:clamp(1.25rem,4vw,2.5rem);padding-right:clamp(1.25rem,4vw,2.5rem)}
+@media(max-width:760px){.news__in{grid-template-columns:1fr}}
+.news .btn{max-width:100%;overflow-wrap:anywhere}
