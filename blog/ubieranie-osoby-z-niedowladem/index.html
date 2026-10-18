@@ -317,5 +317,26 @@
   });
 })();
 </script>
+<!-- udostepnianie-telefon -->
+<script>
+/* Na telefonie link do Facebooka i WhatsAppa otwiera aplikację, która gubi adres artykułu.
+   Tam, gdzie telefon ma systemowe „Udostępnij”, używamy go — pokazuje Facebooka, WhatsAppa,
+   Messengera i SMS z gotowym linkiem. Na komputerze nic się nie zmienia. */
+(function(){
+  if(!navigator.share) return;
+  var dotyk=window.matchMedia&&window.matchMedia('(pointer: coarse)').matches;
+  if(!dotyk) return;
+  var c=document.querySelector('link[rel="canonical"]');
+  var url=c?c.href:location.href.split('#')[0];
+  var tytul=document.title.replace(/\s*\|\s*SeniorSOS\.health\s*$/,'');
+  document.querySelectorAll('.share a[href*="facebook.com/sharer"], .share a[href^="https://wa.me"]').forEach(function(a){
+    a.addEventListener('click',function(e){
+      e.preventDefault();
+      navigator.share({title:tytul,url:url}).catch(function(){});
+    });
+  });
+})();
+</script>
+<!-- /udostepnianie-telefon -->
 </body>
 </html>
