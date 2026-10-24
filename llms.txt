@@ -12,6 +12,7 @@
 - [Poradniki](https://seniorsos.health/blog/): procedury opieki domowej krok po kroku
 - [Alzheimer w domu](https://seniorsos.health/blog/alzheimer-w-domu/): przewodnik dla rodziny — czym jest choroba Alzheimera, trzy etapy, pierwsze kroki po diagnozie, sygnały alarmowe (112 / lekarz tego samego dnia / planowa wizyta), mapa serii
 - [Zespół zachodzącego słońca](https://seniorsos.health/blog/zespol-zachodzacego-slonca/): wieczorny niepokój w demencji (sundowning) — mechanizm, protokół zmierzchu w 5 krokach, odróżnienie od majaczenia
+- [Jak pytać AI o mamę z demencją](https://seniorsos.health/blog/jak-pytac-ai-o-mame-z-demencja/): 4 zasady pytania czatu AI o chorego rodzica, gotowy szablon pytania, granica: kiedy 112 zamiast czatu; na podstawie badania Aguirre i in., JMIR Aging 2024
 - [Hipotensja poposiłkowa](https://seniorsos.health/blog/hipotensja-poposilkowa/): spadek ciśnienia po posiłku u osób starszych, test trzech pomiarów, zapobieganie upadkom
 - [Fibromialgia u opiekunki](https://seniorsos.health/blog/fibromialgia-u-opiekunki/): zdrowie opiekuna — ból przewlekły, dawkowanie sił
 - [Ubieranie osoby z niedowładem](https://seniorsos.health/blog/ubieranie-osoby-z-niedowladem/): ubieranie od strony słabszej, rozbieranie od sprawniejszej
