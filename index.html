@@ -14,132 +14,159 @@
 <meta property="og:title" content="SeniorSOS.health — procedury opieki domowej nad rodzicem">
 <meta property="og:description" content="Konkretne procedury opieki domowej nad starszym rodzicem. Krok po kroku, bez ogólników. Prowadzi Paweł Rutkowski, w trakcie kształcenia na kierunku opiekun medyczny.">
 <meta property="og:url" content="https://seniorsos.health/">
-<meta property="og:image" content="https://seniorsos.health/assets/og-default.png">
+<meta property="og:image" content="https://seniorsos.health/assets/v4/og-seniorsos-noc.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="SeniorSOS.health: opieka nad mamą lub tatą w domu. Trzy drogi według pilności i zdjęcie Pawła Rutkowskiego, twórcy strony.">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="/assets/znak.png" type="image/png">
-<link rel="apple-touch-icon" href="/assets/znak.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/tokens.css?v=2">
-<link rel="stylesheet" href="/css/main.css?v=2">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://seniorsos.health/#website","url":"https://seniorsos.health/","name":"SeniorSOS.health","inLanguage":"pl-PL","publisher":{"@id":"https://seniorsos.health/#person"}},{"@type":"Person","@id":"https://seniorsos.health/#person","name":"Paweł Rutkowski","description":"W trakcie kształcenia na kierunku opiekun medyczny (MED.14) w Krakowie. Egzamin państwowy: czerwiec 2027.","url":"https://seniorsos.health/o-mnie/","email":"pomoc@seniorsos.health","address":{"@type":"PostalAddress","addressLocality":"Kraków","addressRegion":"małopolskie","addressCountry":"PL"},"sameAs":["https://www.youtube.com/@SeniorSOShealth","https://www.facebook.com/seniorsos.health","https://www.linkedin.com/in/seniorsos-health","https://www.instagram.com/seniorsos_health"]}]}</script>
+<meta name="theme-color" content="#F7F2EA">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/v4/znak.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/v4/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/assets/fonts/dm-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/dm-sans-latin-ext-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/cormorant-garamond-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/cormorant-garamond-latin-ext-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/tokens.css?v=4">
+<link rel="stylesheet" href="/css/main.css?v=4">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://seniorsos.health/#website","url":"https://seniorsos.health/","name":"SeniorSOS.health","inLanguage":"pl-PL","publisher":{"@id":"https://seniorsos.health/#organization"}},{"@type":"Organization","@id":"https://seniorsos.health/#organization","name":"SeniorSOS.health","url":"https://seniorsos.health/","logo":{"@type":"ImageObject","url":"https://seniorsos.health/assets/v4/znak-512.png","width":512,"height":512},"founder":{"@id":"https://seniorsos.health/#pawel-rutkowski"},"slogan":"Zawsze blisko. Zawsze bezpiecznie."},{"@type":"Person","@id":"https://seniorsos.health/#pawel-rutkowski","name":"Paweł Rutkowski","description":"W trakcie kształcenia na kierunku opiekun medyczny (MED.14) w Krakowie. Egzamin państwowy: czerwiec 2027.","url":"https://seniorsos.health/o-mnie/","image":"https://seniorsos.health/assets/pawel-rutkowski.jpg","jobTitle":"Twórca SeniorSOS.health","email":"pomoc@seniorsos.health","address":{"@type":"PostalAddress","addressLocality":"Kraków","addressRegion":"małopolskie","addressCountry":"PL"},"sameAs":["https://www.youtube.com/@SeniorSOShealth","https://www.facebook.com/seniorsos.health","https://www.linkedin.com/in/seniorsos-health","https://www.instagram.com/seniorsos_health"]}]}</script>
 </head>
 <body>
 
 <a class="skip" href="#tresc">Przejdź do treści</a>
 <header class="nav">
   <div class="wrap nav__in">
-    <a class="brand" href="/">SeniorSOS<span>.health</span></a>
-    <button class="nav__toggle" aria-expanded="false" aria-controls="menu">Menu</button>
-    <ul class="nav__links" id="menu">
-      <li><a href="/szybka-pomoc/">Szybka pomoc</a></li>
-      <li><a href="/blog/">Poradniki</a></li>
-      <li><a href="/materialy/">Materiały</a></li>
-      <li><a href="/o-mnie/">O mnie</a></li>
-      <li><a href="/kontakt/">Kontakt</a></li>
-    </ul>
+    <a class="brand" href="/" aria-label="SeniorSOS.health, strona główna"><img class="brand__mark" src="/assets/v4/znak.svg" width="32" height="32" alt=""><span class="brand__word" aria-hidden="true">Senior<b>SOS</b><span>.health</span></span></a>
+    <nav class="nav__menu" aria-label="Menu główne">
+      <ul class="nav__links" id="menu">
+        <li><a href="/szybka-pomoc/">Szybka pomoc</a></li>
+        <li><a href="/blog/">Poradniki</a></li>
+        <li><a href="/materialy/">Materiały</a></li>
+        <li><a href="/o-mnie/">O mnie</a></li>
+        <li><a href="/kontakt/">Kontakt</a></li>
+      </ul>
+    </nav>
+    <a class="sos" href="tel:112" aria-label="Zadzwoń pod numer alarmowy 112"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></svg>112</a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu"><svg class="i-open" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5h16" /><path d="M4 12h16" /><path d="M4 19h16" /></svg><svg class="i-close" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg><span class="nav__toggle-label">Menu</span></button>
   </div>
 </header>
 
 <main id="tresc">
-  <section class="hero">
-    <div class="wrap hero__grid">
-      <div>
-        <p class="eyebrow">Zawsze blisko. Zawsze bezpiecznie.</p>
-        <h1>Nie musisz wiedzieć wszystkiego.<br>Musisz wiedzieć, <em>co zrobić teraz.</em></h1>
-        <p class="hero__lead">Opieka nad rodzicem w domu to setki drobnych decyzji, których nikt cię nie nauczył. Znajdziesz tu procedury — krok po kroku, bez ogólników i bez oceniania.</p>
-        <div class="hero__cta">
-          <a class="btn btn--primary" href="/szybka-pomoc/">Szybka pomoc</a>
-          <a class="btn btn--ghost" href="/blog/">Przejrzyj poradniki</a>
+
+  <!-- NOC: pierwszy ekran. Pytanie, autor, trzy drzwi według pilności, reguła 112. -->
+  <section class="night night--lamp hero" aria-labelledby="hero-h1">
+    <div class="wrap hero__in">
+      <h1 class="hero__title" id="hero-h1">Opiekujesz się mamą lub tatą w&nbsp;domu?</h1>
+      <p class="hero__lead">Nie musisz wiedzieć wszystkiego. Musisz wiedzieć, co zrobić teraz.</p>
+
+      <aside class="byline" aria-label="Kto prowadzi SeniorSOS.health">
+        <img class="byline__photo" src="/assets/v4/pawel-rutkowski-240.jpg" srcset="/assets/v4/pawel-rutkowski-240.jpg 240w, /assets/pawel-rutkowski.jpg 640w" sizes="(min-width: 960px) 360px, 56px" width="240" height="300" alt="Paweł Rutkowski, twórca SeniorSOS.health. Uśmiecha się, ma okulary i granatowy strój medyczny." fetchpriority="high">
+        <div class="byline__text">
+          <p class="byline__name">Paweł Rutkowski</p>
+          <p class="byline__role">Twórca SeniorSOS.health</p>
+          <ul class="byline__facts">
+            <li><strong>Ponad dwa lata</strong> opieki nad mamą w&nbsp;domu</li>
+            <li>Uczę się na <strong>opiekuna medycznego (MED.14)</strong>. Egzamin państwowy: czerwiec 2027</li>
+            <li>Praktyka w&nbsp;placówce opiekuńczej w&nbsp;Krakowie</li>
+          </ul>
+          <a class="byline__more" href="/o-mnie/">O&nbsp;mnie i&nbsp;skąd biorę wiedzę</a>
         </div>
-      </div>
-      <aside class="card-author">
-        <p class="card-author__name">Paweł Rutkowski</p>
-        <p>W trakcie kształcenia na kierunku <strong>opiekun medyczny (MED.14)</strong>. Egzamin państwowy: czerwiec 2027.</p>
-        <p>Praktyka w placówce opiekuńczej w Krakowie. Wcześniej — dwa lata opieki nad własnym rodzicem w domu.</p>
-        <p>Piszę o tym, co sam sprawdziłem.</p>
       </aside>
+
+      <nav class="doors-nav" aria-labelledby="drzwi-h">
+        <h2 class="vh" id="drzwi-h">Co się dzieje w&nbsp;tej chwili? Wybierz drogę</h2>
+        <ul class="doors">
+          <li><a class="door door--now" href="/szybka-pomoc/">
+            <span class="door__when">Teraz</span>
+            <span class="door__what">Dzieje się coś niepokojącego</span>
+            <span class="door__desc">Upadek, gorączka, nagłe splątanie, ból.</span>
+            <svg class="door__go" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6" /></svg>
+          </a></li>
+          <li><a class="door door--soon" href="/blog/">
+            <span class="door__when">Do rana</span>
+            <span class="door__what">Poczeka, ale muszę wiedzieć</span>
+            <span class="door__desc">Mycie, ubieranie, demencja.</span>
+            <svg class="door__go" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6" /></svg>
+          </a></li>
+          <li><a class="door door--calm" href="/materialy/">
+            <span class="door__when">Na spokojnie</span>
+            <span class="door__what">Chcę się przygotować</span>
+            <span class="door__desc">Karty na lodówkę i&nbsp;dla ratownika.</span>
+            <svg class="door__go" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6" /></svg>
+          </a></li>
+        </ul>
+      </nav>
+
+      <p class="hero__sos">Nie oddycha, nie reaguje albo ma objawy udaru? <a class="hero__call" href="tel:112"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></svg>Dzwoń 112</a></p>
     </div>
   </section>
 
-  <section class="triage">
-    <div class="wrap triage__in">
-      <p class="eyebrow">Zacznij od tego</p>
-      <h2>Co się dzieje u ciebie w tej chwili?</h2>
-      <p class="triage__sub">Trzy różne pilności, trzy różne drogi. Wybierz tę, która pasuje do teraz.</p>
-      <div class="doors">
-        <a class="door" href="/szybka-pomoc/">
-          <span class="door__when">Teraz</span>
-          <span class="door__title">Dzieje się coś niepokojącego</span>
-          <span class="door__desc">Gorączka, upadek, splątanie, ból. Co zrobić w pierwszej minucie i kiedy dzwonić.</span>
-          <span class="door__go">Szybka pomoc →</span>
-        </a>
-        <a class="door" href="/blog/">
-          <span class="door__when">Do rana</span>
-          <span class="door__title">Poczeka, ale muszę wiedzieć</span>
-          <span class="door__desc">Mycie, karmienie, podnoszenie, rozmowa przy demencji. Procedury krok po kroku.</span>
-          <span class="door__go">Poradniki →</span>
-        </a>
-        <a class="door" href="/materialy/">
-          <span class="door__when">Na spokojnie</span>
-          <span class="door__title">Chcę się przygotować</span>
-          <span class="door__desc">Karty i listy do wydrukowania. Do powieszenia na lodówce, zanim będą potrzebne.</span>
-          <span class="door__go">Materiały →</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
+  <!-- DZIEŃ 1: ostatnie poradniki. Przy nowym wpisie: nowy idzie do .feature, dwa poprzednie do .briefs. -->
+  <section class="latest" aria-labelledby="latest-h">
     <div class="wrap">
-      <div class="section__head">
-        <p class="eyebrow">Poradniki</p>
-        <h2>Ostatnie wpisy.</h2>
+      <div class="latest__head">
+        <h2 class="h2" id="latest-h">Ostatnie poradniki</h2>
+        <a class="latest__all" href="/blog/">Wszystkie poradniki<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6" /></svg></a>
       </div>
-      <div class="posts">
-        <a class="post" href="/blog/jak-rozmawiac-z-mama-z-alzheimerem/">
-          <span class="post__meta">Alzheimer w domu · 7 min</span>
-          <h3>Jak rozmawiać z mamą z Alzheimerem</h3>
-          <p>Mama odpowiada „nic”? Zamiast „co cię boli?” zapytaj „plecy czy nogi?”. Siedem zasad i gotowe zdania.</p>
-          <span class="post__go">Czytaj →</span>
+      <div class="latest__grid">
+        <a class="feature" href="/blog/jak-rozmawiac-z-mama-z-alzheimerem/">
+          <span class="feature__media"><img src="/assets/blog/jak-rozmawiac-og.jpg" width="1200" height="630" alt="" loading="lazy" decoding="async"></span>
+          <span class="feature__series">Alzheimer w&nbsp;domu, część 3</span>
+          <h3 class="feature__title">Jak rozmawiać z&nbsp;mamą z&nbsp;Alzheimerem</h3>
+          <span class="feature__desc">Mama odpowiada „nic”? Zamiast „co cię boli?” zapytaj „plecy czy nogi?”. Siedem zasad i&nbsp;gotowe zdania.</span>
+          <span class="feature__time">7 minut czytania</span>
         </a>
-        <a class="post" href="/blog/trudne-zachowania-alzheimer/">
-          <span class="post__meta">Alzheimer w domu · 8 min</span>
-          <h3>Trudne zachowania w Alzheimerze</h3>
-          <p>Mama krzyczy albo oskarża cię o kradzież? Co sprawdzić w dwie minuty i co powiedzieć zamiast tłumaczenia.</p>
-          <span class="post__go">Czytaj →</span>
-        </a>
-        <a class="post" href="/blog/alzheimer-w-domu/">
-          <span class="post__meta">Seria · 9 min</span>
-          <h3>Alzheimer w domu — przewodnik dla rodziny</h3>
-          <p>Trzy etapy choroby, pierwsze kroki po diagnozie i sygnały, przy których nie wolno czekać.</p>
-          <span class="post__go">Czytaj →</span>
-        </a>
+        <ul class="briefs">
+          <li><a class="brief" href="/blog/trudne-zachowania-alzheimer/">
+            <span class="brief__media"><img src="/assets/blog/trudne-zachowania-og.jpg" width="1200" height="630" alt="" loading="lazy" decoding="async"></span>
+            <span class="brief__text">
+              <span class="brief__series">Alzheimer w&nbsp;domu, część 2</span>
+              <h3 class="brief__title">Trudne zachowania w&nbsp;Alzheimerze</h3>
+              <span class="brief__time">8 minut czytania</span>
+            </span>
+          </a></li>
+          <li><a class="brief" href="/blog/zespol-zachodzacego-slonca/">
+            <span class="brief__media"><img src="/assets/blog/zespol-zachodzacego-slonca-og.jpg" width="1200" height="630" alt="" loading="lazy" decoding="async"></span>
+            <span class="brief__text">
+              <span class="brief__series">Alzheimer w&nbsp;domu, część 1</span>
+              <h3 class="brief__title">Zespół zachodzącego słońca</h3>
+              <span class="brief__time">9 minut czytania</span>
+            </span>
+          </a></li>
+          <li><a class="brief" href="/blog/alzheimer-w-domu/">
+            <span class="brief__media"><span class="cover"><img src="/assets/v4/znak.svg" width="64" height="64" alt=""></span></span>
+            <span class="brief__text">
+              <span class="brief__series">Początek serii</span>
+              <h3 class="brief__title">Alzheimer w&nbsp;domu: przewodnik dla rodziny</h3>
+              <span class="brief__time">9 minut czytania</span>
+            </span>
+          </a></li>
+        </ul>
       </div>
-      <div class="section__foot">
-        <a class="btn btn--ghost" href="/blog/">Wszystkie wpisy</a>
-      </div>
+      <p class="latest__note">Ilustracje we wpisach są wygenerowane z&nbsp;pomocą AI. Zdjęcie autora jest prawdziwe.</p>
     </div>
   </section>
 
-  <hr class="rule">
-
-  <section class="section about-section">
-    <div class="wrap about">
+  <!-- DZIEŃ 2: jak tu pracuję -->
+  <section class="trust" aria-labelledby="trust-h">
+    <div class="wrap trust__in">
+      <div class="trust__lead">
+        <h2 class="vh" id="trust-h">Jak tu pracuję</h2>
+        <blockquote class="trust__quote"><p>„Uczę się tego zawodu i&nbsp;opisuję drogę na bieżąco, razem z&nbsp;tym, czego jeszcze nie umiem.”</p></blockquote>
+        <p class="trust__sign"><strong>Paweł Rutkowski</strong>Twórca SeniorSOS.health</p>
+      </div>
       <div>
-        <p class="eyebrow">Kto to pisze</p>
-        <p class="about__quote">„Uczę się tego zawodu i opisuję drogę na bieżąco — razem z tym, czego jeszcze nie umiem.”</p>
-      </div>
-      <div class="about__body">
-        <p>Nazywam się Paweł Rutkowski. Od lutego 2026 kształcę się na kierunku <strong>opiekun medyczny (MED.14)</strong> w Krakowie. Egzamin państwowy zdaję w czerwcu 2027 — do tego czasu nie jestem opiekunem medycznym w rozumieniu przepisów i nie będę tak o sobie pisał.</p>
-        <p>Mam za sobą praktyki w placówce opiekuńczej i dwa lata opieki nad własnym rodzicem w domu. To drugie nauczyło mnie więcej niż jakikolwiek podręcznik — głównie tego, jak wiele rzeczy nikt rodzinom nie tłumaczy.</p>
-        <p><strong>Nie zastępuję lekarza ani pielęgniarki.</strong> Pokazuję czynności opiekuńcze i wskazuję moment, w którym trzeba zadzwonić po kogoś z uprawnieniami.</p>
-        <p><a href="/o-mnie/">Więcej o mnie i o tym, skąd biorę wiedzę →</a></p>
+        <ul class="principles">
+          <li><h3>Procedury, nie porady</h3><p>Zamiast „warto zadbać o&nbsp;higienę” dostajesz kolejność czynności, potrzebny sprzęt i&nbsp;najczęstszy błąd. Coś, co da się zrobić jedną ręką o&nbsp;trzeciej w&nbsp;nocy.</p></li>
+          <li><h3>Granice, nie wszechwiedza</h3><p>Zero leków, dawek i&nbsp;diagnoz. Piszę wprost, w&nbsp;którym momencie kończy się moja rola i&nbsp;trzeba zadzwonić po lekarza.</p></li>
+          <li><h3>Z&nbsp;praktyki, nie z&nbsp;broszury</h3><p>Wszystko przeszło przez dom albo przez placówkę. W&nbsp;seriach podaję też badania i&nbsp;oficjalne wytyczne z&nbsp;linkami. Jeśli czegoś nie sprawdziłem, piszę o&nbsp;tym.</p></li>
+          <li><h3>Status bez udawania</h3><p>Uczę się na opiekuna medycznego (MED.14). Do egzaminu w&nbsp;czerwcu 2027 nie przedstawiam się jako opiekun medyczny.</p></li>
+        </ul>
+        <a class="trust__more" href="/o-mnie/">Więcej o&nbsp;mnie i&nbsp;o&nbsp;tym, skąd biorę wiedzę</a>
       </div>
     </div>
   </section>
-
   <section class="news">
     <div class="wrap news__in">
       <div>
@@ -163,36 +190,40 @@
 
 <footer class="foot">
   <div class="wrap">
-    <p class="disclaimer"><strong>Ważne:</strong> materiały na tej stronie mają charakter edukacyjny i nie zastępują konsultacji lekarskiej. Nie znajdziesz tu zaleceń dotyczących leków ani dawkowania. W sytuacji zagrożenia życia dzwoń pod numer <strong>112</strong>.</p>
+    <div class="foot__top">
+      <a class="brand brand--foot" href="/" aria-label="SeniorSOS.health, strona główna"><img class="brand__mark" src="/assets/v4/znak.svg" width="40" height="40" alt=""><span class="brand__word" aria-hidden="true">Senior<b>SOS</b><span>.health</span></span></a>
+      <p class="foot__tag">Zawsze blisko. Zawsze bezpiecznie.</p>
+    </div>
+    <p class="disclaimer"><strong>Ważne:</strong> materiały na tej stronie mają charakter edukacyjny i&nbsp;nie zastępują konsultacji lekarskiej. Nie znajdziesz tu zaleceń dotyczących leków ani dawkowania. W&nbsp;sytuacji zagrożenia życia dzwoń pod numer <a href="tel:112">112</a>.</p>
     <div class="foot__grid">
       <div>
-        <p class="foot__brand">SeniorSOS.health</p>
-        <p class="foot__tag">Zawsze blisko.<br>Zawsze bezpiecznie.</p>
+        <p class="foot__brand">Paweł Rutkowski</p>
+        <p class="foot__about">Twórca SeniorSOS.health</p>
         <p><a href="mailto:pomoc@seniorsos.health">pomoc@seniorsos.health</a></p>
       </div>
-      <div>
-        <h4>Strona</h4>
+      <nav aria-label="Strona">
+        <p class="foot__h">Strona</p>
         <ul>
           <li><a href="/szybka-pomoc/">Szybka pomoc</a></li>
           <li><a href="/blog/">Poradniki</a></li>
           <li><a href="/materialy/">Materiały do pobrania</a></li>
-          <li><a href="/o-mnie/">O mnie</a></li>
+          <li><a href="/o-mnie/">O&nbsp;mnie</a></li>
           <li><a href="/kontakt/">Kontakt</a></li>
         </ul>
-      </div>
-      <div>
-        <h4>Gdzie jeszcze</h4>
+      </nav>
+      <nav aria-label="Gdzie jeszcze">
+        <p class="foot__h">Gdzie jeszcze</p>
         <ul>
           <li><a href="https://www.youtube.com/@SeniorSOShealth" rel="me noopener">YouTube</a></li>
           <li><a href="https://www.facebook.com/seniorsos.health" rel="me noopener">Facebook</a></li>
           <li><a href="https://www.linkedin.com/in/seniorsos-health" rel="me noopener">LinkedIn</a></li>
           <li><a href="https://www.instagram.com/seniorsos_health" rel="me noopener">Instagram</a></li>
         </ul>
-      </div>
+      </nav>
     </div>
     <div class="foot__legal">
-      <span>© 2026 SeniorSOS.health · Paweł Rutkowski · Kraków</span>
-      <span><a href="/status-i-regulamin/">Status, prywatność i regulamin</a></span>
+      <span>© 2026 SeniorSOS.health, Kraków</span>
+      <span><a href="/status-i-regulamin/">Status, prywatność i&nbsp;regulamin</a></span>
     </div>
   </div>
 </footer>
@@ -201,10 +232,9 @@
 (function(){
   var t=document.querySelector('.nav__toggle'), m=document.getElementById('menu');
   if(!t||!m) return;
-  t.addEventListener('click',function(){
-    var open=m.classList.toggle('is-open');
-    t.setAttribute('aria-expanded',open);
-  });
+  function ustaw(o){ m.classList.toggle('is-open',o); t.setAttribute('aria-expanded',o); }
+  t.addEventListener('click',function(){ ustaw(!m.classList.contains('is-open')); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&m.classList.contains('is-open')){ ustaw(false); t.focus(); } });
 })();
 </script>
 

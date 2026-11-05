@@ -5,12 +5,18 @@
 # ═══════════════════════════════════════════════════════════
 
 # ── Wszystkie adresy ────────────────────────────────────────
+#  System 4.0 (5.11.2026): fonty są lokalne (/assets/fonts/), więc
+#  bez fonts.googleapis.com i fonts.gstatic.com. form-action
+#  dopuszcza formularz KIT (newsletter od 13.11.2026).
+#  static.cloudflareinsights.com + cloudflareinsights.com: bez tych
+#  dwóch wpisów przeglądarka blokuje licznik Cloudflare Web Analytics
+#  (wymóg z dokumentacji Cloudflare, „Content Security Policies”).
 /*
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
-  Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; script-src 'self' 'unsafe-inline'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';
+  Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; connect-src 'self' https://cloudflareinsights.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://app.kit.com https://app.convertkit.com;
   Cache-Control: public, max-age=0, must-revalidate
 
 # ── Obrazy i logotypy: rok, bo się nie zmieniają ────────────

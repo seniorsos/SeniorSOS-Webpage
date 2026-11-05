@@ -8,7 +8,10 @@
 #  Nie blokujemy niczego bez osobnej, świadomej decyzji.
 # ═══════════════════════════════════════════════════════════
 
+# Sygnały treści (Cloudflare Content Signals Policy, 2025): ta sama decyzja
+# zapisana w formacie, który czytają roboty AI. Nie jest prawnie wiążący.
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 # wyszukiwarka Google

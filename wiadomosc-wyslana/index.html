@@ -14,15 +14,22 @@
 <meta property="og:title" content="Wiadomość wysłana | SeniorSOS.health">
 <meta property="og:description" content="Potwierdzenie wysłania wiadomości do SeniorSOS.health.">
 <meta property="og:url" content="https://seniorsos.health/wiadomosc-wyslana/">
-<meta property="og:image" content="https://seniorsos.health/assets/og-default.png">
+<meta property="og:image" content="https://seniorsos.health/assets/v4/og-seniorsos-noc.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="SeniorSOS.health: opieka nad mamą lub tatą w domu. Trzy drogi według pilności i zdjęcie Pawła Rutkowskiego, twórcy strony.">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="/assets/znak.png" type="image/png">
-<link rel="apple-touch-icon" href="/assets/znak.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/tokens.css?v=2">
-<link rel="stylesheet" href="/css/main.css?v=2">
+<meta name="theme-color" content="#F7F2EA">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/v4/znak.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/v4/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/assets/fonts/dm-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/dm-sans-latin-ext-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/cormorant-garamond-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/cormorant-garamond-latin-ext-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/tokens.css?v=4">
+<link rel="stylesheet" href="/css/main.css?v=4">
 <meta name="robots" content="noindex, follow">
 
 </head>
@@ -31,15 +38,18 @@
 <a class="skip" href="#tresc">Przejdź do treści</a>
 <header class="nav">
   <div class="wrap nav__in">
-    <a class="brand" href="/">SeniorSOS<span>.health</span></a>
-    <button class="nav__toggle" aria-expanded="false" aria-controls="menu">Menu</button>
-    <ul class="nav__links" id="menu">
-      <li><a href="/szybka-pomoc/">Szybka pomoc</a></li>
-      <li><a href="/blog/">Poradniki</a></li>
-      <li><a href="/materialy/">Materiały</a></li>
-      <li><a href="/o-mnie/">O mnie</a></li>
-      <li><a href="/kontakt/">Kontakt</a></li>
-    </ul>
+    <a class="brand" href="/" aria-label="SeniorSOS.health, strona główna"><img class="brand__mark" src="/assets/v4/znak.svg" width="32" height="32" alt=""><span class="brand__word" aria-hidden="true">Senior<b>SOS</b><span>.health</span></span></a>
+    <nav class="nav__menu" aria-label="Menu główne">
+      <ul class="nav__links" id="menu">
+        <li><a href="/szybka-pomoc/">Szybka pomoc</a></li>
+        <li><a href="/blog/">Poradniki</a></li>
+        <li><a href="/materialy/">Materiały</a></li>
+        <li><a href="/o-mnie/">O mnie</a></li>
+        <li><a href="/kontakt/">Kontakt</a></li>
+      </ul>
+    </nav>
+    <a class="sos" href="tel:112" aria-label="Zadzwoń pod numer alarmowy 112"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></svg>112</a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu"><svg class="i-open" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5h16" /><path d="M4 12h16" /><path d="M4 19h16" /></svg><svg class="i-close" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg><span class="nav__toggle-label">Menu</span></button>
   </div>
 </header>
 
@@ -61,36 +71,40 @@
 
 <footer class="foot">
   <div class="wrap">
-    <p class="disclaimer"><strong>Ważne:</strong> materiały na tej stronie mają charakter edukacyjny i nie zastępują konsultacji lekarskiej. Nie znajdziesz tu zaleceń dotyczących leków ani dawkowania. W sytuacji zagrożenia życia dzwoń pod numer <strong>112</strong>.</p>
+    <div class="foot__top">
+      <a class="brand brand--foot" href="/" aria-label="SeniorSOS.health, strona główna"><img class="brand__mark" src="/assets/v4/znak.svg" width="40" height="40" alt=""><span class="brand__word" aria-hidden="true">Senior<b>SOS</b><span>.health</span></span></a>
+      <p class="foot__tag">Zawsze blisko. Zawsze bezpiecznie.</p>
+    </div>
+    <p class="disclaimer"><strong>Ważne:</strong> materiały na tej stronie mają charakter edukacyjny i&nbsp;nie zastępują konsultacji lekarskiej. Nie znajdziesz tu zaleceń dotyczących leków ani dawkowania. W&nbsp;sytuacji zagrożenia życia dzwoń pod numer <a href="tel:112">112</a>.</p>
     <div class="foot__grid">
       <div>
-        <p class="foot__brand">SeniorSOS.health</p>
-        <p class="foot__tag">Zawsze blisko.<br>Zawsze bezpiecznie.</p>
+        <p class="foot__brand">Paweł Rutkowski</p>
+        <p class="foot__about">Twórca SeniorSOS.health</p>
         <p><a href="mailto:pomoc@seniorsos.health">pomoc@seniorsos.health</a></p>
       </div>
-      <div>
-        <h4>Strona</h4>
+      <nav aria-label="Strona">
+        <p class="foot__h">Strona</p>
         <ul>
           <li><a href="/szybka-pomoc/">Szybka pomoc</a></li>
           <li><a href="/blog/">Poradniki</a></li>
           <li><a href="/materialy/">Materiały do pobrania</a></li>
-          <li><a href="/o-mnie/">O mnie</a></li>
+          <li><a href="/o-mnie/">O&nbsp;mnie</a></li>
           <li><a href="/kontakt/">Kontakt</a></li>
         </ul>
-      </div>
-      <div>
-        <h4>Gdzie jeszcze</h4>
+      </nav>
+      <nav aria-label="Gdzie jeszcze">
+        <p class="foot__h">Gdzie jeszcze</p>
         <ul>
           <li><a href="https://www.youtube.com/@SeniorSOShealth" rel="me noopener">YouTube</a></li>
           <li><a href="https://www.facebook.com/seniorsos.health" rel="me noopener">Facebook</a></li>
           <li><a href="https://www.linkedin.com/in/seniorsos-health" rel="me noopener">LinkedIn</a></li>
           <li><a href="https://www.instagram.com/seniorsos_health" rel="me noopener">Instagram</a></li>
         </ul>
-      </div>
+      </nav>
     </div>
     <div class="foot__legal">
-      <span>© 2026 SeniorSOS.health · Paweł Rutkowski · Kraków</span>
-      <span><a href="/status-i-regulamin/">Status, prywatność i regulamin</a></span>
+      <span>© 2026 SeniorSOS.health, Kraków</span>
+      <span><a href="/status-i-regulamin/">Status, prywatność i&nbsp;regulamin</a></span>
     </div>
   </div>
 </footer>
@@ -99,10 +113,9 @@
 (function(){
   var t=document.querySelector('.nav__toggle'), m=document.getElementById('menu');
   if(!t||!m) return;
-  t.addEventListener('click',function(){
-    var open=m.classList.toggle('is-open');
-    t.setAttribute('aria-expanded',open);
-  });
+  function ustaw(o){ m.classList.toggle('is-open',o); t.setAttribute('aria-expanded',o); }
+  t.addEventListener('click',function(){ ustaw(!m.classList.contains('is-open')); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&m.classList.contains('is-open')){ ustaw(false); t.focus(); } });
 })();
 </script>
 

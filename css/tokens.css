@@ -1,35 +1,91 @@
 /* ============================================================
    SeniorSOS.health — TOKENY MARKI
-   System zamrożony 24.07.2026 · wersja 3.0
-   Nie zmieniamy tych wartości bez decyzji o odmrożeniu systemu.
+   System 4.0 „Noc i dzień” · 5.11.2026
+   Zastępuje system 3.0 z 24.07.2026. Wartości zmieniamy
+   tylko po świadomej decyzji o odmrożeniu systemu.
    ============================================================ */
+
+/* --- FONTY LOKALNE ------------------------------------------
+   Bez serwerów Google: adres IP czytelnika nie wychodzi poza
+   seniorsos.health. Licencja SIL Open Font License 1.1
+   (pliki LICENSE-*.txt w /assets/fonts/).
+   „latin” + „latin-ext” = polski, niemiecki, hiszpański, francuski. */
+@font-face{font-family:"DM Sans";font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/dm-sans-latin-400-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"DM Sans";font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/dm-sans-latin-ext-400-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"DM Sans";font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/dm-sans-latin-600-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"DM Sans";font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/dm-sans-latin-ext-600-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"DM Sans";font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/dm-sans-latin-700-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"DM Sans";font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/dm-sans-latin-ext-700-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/cormorant-garamond-latin-500-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/cormorant-garamond-latin-ext-500-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/cormorant-garamond-latin-600-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Cormorant Garamond";font-style:normal;font-weight:600;font-display:swap;src:url(/assets/fonts/cormorant-garamond-latin-ext-600-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+
+
 :root{
-  /* --- papier i tekst (90% powierzchni) --- */
-  --cream:#F7F2EA;         /* tło główne */
-  --cream-deep:#EFE7DA;    /* tło kart */
-  --bark:#3D2B1F;          /* tekst główny */
-  --ink:var(--bark);
-  --ink-soft:#6B5A4C;      /* tekst pomocniczy */
-  --hairline:#DED4C4;      /* linie */
+  color-scheme:light;      /* strona ma jeden, jasny świat; noc to pole, nie tryb */
+  /* --- DZIEŃ: papier i tekst (większość powierzchni) ------------
+     Długie czytanie zawsze ciemnym tekstem na jasnym tle.
+     Dlatego cała strona nie ma trybu ciemnego. */
+  --paper:#F7F2EA;          /* tło główne */
+  --paper-2:#EFE7DA;        /* tło ramek i sekcji */
+  --paper-3:#E6DCCB;        /* wciśnięty element */
+  --white:#FFFDF9;          /* pola formularzy, karty na tle sekcji */
+  --ink:#3D2B1F;            /* tekst główny, 12:1 na papierze */
+  --ink-soft:#6B5A4C;       /* tekst pomocniczy, 5,9:1 */
+  --line:#DED4C4;           /* linie ozdobne */
+  --line-strong:#8A7867;    /* obrys pól i przycisków, 3,8:1 */
 
-  /* --- zieleń (7%) --- */
-  --forest:#2D5A4A;        /* pas nocny, akcenty tekstowe */
-  --forest-dark:#22453A;
-  --sage:#A8C4B4;          /* tekst na zieleni */
-  --logo-green:#819984;    /* zieleń logotypu */
+  /* --- NOC: zieleń leśna ---------------------------------------
+     Jedyne ciemne pole na stronie. Tam, gdzie Ania podejmuje
+     decyzję: pierwszy ekran, Szybka pomoc, ramki „Dzwoń 112”. */
+  --night:#2D5A4A;          /* tło nocy; krem na niej 7:1 */
+  --night-deep:#22453A;
+  --on-night:#F7F2EA;
+  --on-night-soft:rgba(247,242,234,.82);   /* 5,4:1 */
+  --night-tile:rgba(247,242,234,.12);      /* kafel „Do rana”, krem na nim 5,3:1 */
+  --night-edge:rgba(247,242,234,.5);       /* obrys kafla „Na spokojnie”, 3:1 */
+  --forest:var(--night);    /* linki i akcenty tekstowe na papierze, 7:1 */
 
-  /* --- akcent (3%) — TYLKO rzeczy klikalne --- */
-  --accent:#D1A05E;        /* wyrównany do logotypu */
+  /* --- BURSZTYN: tylko rzeczy klikalne -------------------------- */
+  --accent:#D1A05E;         /* kolor z logo; tekst ink na nim 5,7:1 */
   --accent-dark:#BC8C4B;
-  --accent-light:#F6E7D2;  /* tło sekcji newslettera */
-  --accent-ink:#7A5B3E;    /* tekst na tle akcentowym */
+  --dawn:#F6E7D2;           /* świt: tło sekcji newslettera */
+  --accent-ink:#7A5B3E;     /* tekst na świcie, 5,1:1 */
 
-  /* --- typografia --- */
-  --display:"Cormorant Garamond",Georgia,serif;
-  --body:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  /* --- SYGNAŁ: wyłącznie numer 112 ------------------------------ */
+  --sos:#B0382B;            /* na papierze 5,5:1; biały na nim 6,1:1 */
+  --sos-dark:#962E23;
 
-  /* --- siatka --- */
-  --wrap:1140px;
-  --gap:clamp(3.5rem,7vw,7rem);
-  --radius:3px;
+  /* --- znak SeniorSOS.health (tylko logo) ---------------------- */
+  --logo-green:#819984;
+
+  /* --- typografia ----------------------------------------------
+     Nagłówki: Cormorant Garamond 500/600 (bez cienkiej 300).
+     Tekst: DM Sans, bazowo 18 px; nic funkcjonalnego poniżej 16 px. */
+  --display:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --body:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --fs-body:1.125rem;
+
+  /* --- kształt: promień zależy od roli -------------------------- */
+  --r-sm:10px;              /* przyciski, pola, miniatury */
+  --r-md:14px;              /* drzwi, ramki */
+  --r-lg:20px;              /* zdjęcia, duże panele */
+  --r-pill:999px;           /* tylko 112 i tagi */
+
+  /* --- siatka --------------------------------------------------- */
+  --wrap:1200px;
+  --pad:clamp(1rem,4.2vw,2.5rem);
+  --gap:clamp(3.5rem,8vw,6.5rem);
+  --tap:48px;               /* minimalny cel dotyku */
+
+  /* --- nazwy z wersji 3.0 (zostają: używają ich starsze wpisy) --- */
+  --cream:var(--paper);
+  --cream-deep:var(--paper-2);
+  --bark:var(--ink);
+  --hairline:var(--line);
+  --sage:#A8C4B4;
+  --forest-dark:var(--night-deep);
+  --accent-light:var(--dawn);
+  --radius:var(--r-sm);
 }
