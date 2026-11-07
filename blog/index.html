@@ -57,13 +57,13 @@
 
 <main id="tresc">
   <!-- okruszki -->
-  <nav class="crumbs wrap wrap--narrow" aria-label="Ścieżka nawigacji">
+  <nav class="crumbs wrap" aria-label="Ścieżka nawigacji">
     <ol><li><a href="/">Strona główna</a></li><li aria-current="page">Poradniki</li></ol>
   </nav>
   <!-- /okruszki -->
 
   <section class="phead">
-    <div class="wrap wrap--narrow">
+    <div class="wrap">
       <p class="eyebrow">Poradniki</p>
       <h1>Procedury opieki domowej, krok po kroku.</h1>
       <p class="phead__lead">Jeden temat, jedna procedura, jedno wyjaśnienie dlaczego tak. Bez leków, bez dawek, bez diagnoz — z jasno zaznaczonym momentem, w którym trzeba zadzwonić po kogoś z uprawnieniami.</p>
@@ -71,54 +71,54 @@
   </section>
 
   <section class="section--tight">
-    <div class="wrap wrap--narrow">
+    <div class="wrap">
 
-      <!-- ZASADA UKŁADU (27.10.2026): 1) Nowy poradnik — jedna karta, najświeższy wpis;
+      <!-- ZASADA UKŁADU (27.10.2026): 1) (7.11.2026) bez osobnej karty „Nowy poradnik”: najnowszy wpis ma znaczek „Nowy” na swojej karcie;
            2) serie — seria, która trwa, na górze; w serii: przewodnik, potem części według numeru, nie daty;
            3) Z zajęć MED.14 i inne poradniki — według daty, najnowsze u góry. -->
 
-      <div class="bgroup bgroup--first" aria-labelledby="g-nowy">
-        <h2 class="eyebrow" id="g-nowy">Nowy poradnik</h2>
-        <div class="posts posts--list">
-          <a class="post post--lead" href="/blog/jak-rozmawiac-z-mama-z-alzheimerem/">
-            <span class="post__meta">5 listopada 2026 · Alzheimer w domu, część 3 · 7 min</span>
-            <h3>Jak rozmawiać z mamą z Alzheimerem: 7 zasad na co dzień</h3>
-            <p>Mama odpowiada „nic”? Zamiast „co cię boli?” zapytaj „plecy czy nogi?”. Siedem zasad, tabela gotowych zdań i co badania mówią o walidacji.</p>
-            <span class="post__go">Czytaj →</span>
-          </a>
-        </div>
-      </div>
-
-      <section class="bgroup" aria-labelledby="g-alzheimer">
+      <section class="bgroup bgroup--first" aria-labelledby="g-alzheimer">
         <p class="eyebrow">Seria · co środę rano</p>
         <h2 class="bgroup__title" id="g-alzheimer">Alzheimer w domu</h2>
-        <div class="posts posts--list">
+        <div class="posts posts--cards">
           <a class="post post--lead" href="/blog/alzheimer-w-domu/">
+            <span class="post__media post__media--cover"><img src="/assets/v4/znak.svg" width="72" height="72" alt=""></span>
+            <div class="post__body">
             <span class="post__meta">Przewodnik po serii · 9 min</span>
             <h3>Alzheimer w domu — przewodnik dla rodziny</h3>
             <p>Czym jest choroba, jak przebiegają jej trzy etapy, co zrobić po diagnozie i kiedy dzwonić pod 112. Tu zaczyna się seria, a mapa prowadzi do każdej części.</p>
             <span class="post__go">Zacznij tutaj →</span>
+          </div>
           </a>
 
           <a class="post" href="/blog/zespol-zachodzacego-slonca/">
+            <span class="post__media"><img src="/assets/blog/zespol-zachodzacego-slonca-og.jpg" width="1200" height="630" alt="" loading="lazy" decoding="async"></span>
+            <div class="post__body">
             <span class="post__meta">Część 1 · 18 października 2026 · 9 min</span>
             <h3>Zespół zachodzącego słońca — wieczorny niepokój w demencji</h3>
             <p>Rano kawa i krzyżówka, o 17:00 „muszę iść do domu”. Dlaczego zmierzch zmienia mamę i pięć kroków, zanim zrobi się szaro.</p>
             <span class="post__go">Czytaj →</span>
+          </div>
           </a>
 
           <a class="post" href="/blog/trudne-zachowania-alzheimer/">
+            <span class="post__media"><img src="/assets/blog/trudne-zachowania-og.jpg" width="1200" height="630" alt="" loading="lazy" decoding="async"></span>
+            <div class="post__body">
             <span class="post__meta">Część 2 · 27 października 2026 · 8 min</span>
             <h3>Trudne zachowania w Alzheimerze: co robić krok po kroku</h3>
             <p>Krzyk, odpychanie, „ukradłaś mi portfel”. Lista przyczyn do sprawdzenia w dwie minuty, metoda 4 kroków i zdania, które wyciszają.</p>
             <span class="post__go">Czytaj →</span>
+          </div>
           </a>
 
           <a class="post" href="/blog/jak-rozmawiac-z-mama-z-alzheimerem/">
-            <span class="post__meta">Część 3 · 5 listopada 2026 · 7 min</span>
+            <span class="post__media"><img src="/assets/blog/jak-rozmawiac-og.jpg" width="1200" height="630" alt="" loading="lazy" decoding="async"></span>
+            <div class="post__body">
+            <span class="post__meta"><span class="badge-new">Nowy</span> Część 3 · 5 listopada 2026 · 7 min</span>
             <h3>Jak rozmawiać z mamą z Alzheimerem: 7 zasad na co dzień</h3>
             <p>Mama odpowiada „nic”? Zamiast „co cię boli?” zapytaj „plecy czy nogi?”. Siedem zasad, tabela gotowych zdań i co badania mówią o walidacji.</p>
             <span class="post__go">Czytaj →</span>
+          </div>
           </a>
         </div>
         <p class="bgroup__next"><strong>Następne części:</strong> bezpieczny dom, codzienna opieka, czerwone flagi i formalności. Nowa część co środę rano, a mailem w czwartek, jeśli zapiszesz się niżej.</p>
@@ -127,41 +127,56 @@
       <section class="bgroup" aria-labelledby="g-inne">
         <p class="eyebrow">Pojedyncze poradniki</p>
         <h2 class="bgroup__title" id="g-inne">Z zajęć MED.14 i inne procedury</h2>
-        <div class="posts posts--list">
+        <div class="posts posts--cards">
 
           <a class="post" href="/blog/jak-pytac-ai-o-mame-z-demencja/">
+            <span class="post__media"><img src="/assets/blog/jak-pytac-ai-og.jpg" width="1200" height="630" alt="" loading="lazy" decoding="async"></span>
+            <div class="post__body">
             <span class="post__meta">24 października 2026 · AI w opiece domowej · 5 min</span>
             <h3>Jak pytać AI o mamę z demencją: 4 zasady dla opiekunki</h3>
             <p>O 3:00 w nocy czat odpowie szybciej niż ktokolwiek. Gdzie można mu zaufać, gdzie się myli i gotowy szablon pytania do zapisania w telefonie.</p>
             <span class="post__go">Czytaj →</span>
+          </div>
           </a>
 
           <a class="post" href="/blog/hipotensja-poposilkowa/">
+            <span class="post__media"><img src="/assets/blog/hipotensja-pomiar-po-obiedzie-2026.jpg" width="1200" height="800" alt="" loading="lazy" decoding="async"></span>
+            <div class="post__body">
             <span class="post__meta">3 sierpnia 2026 · Procedury · 11 min</span>
             <h3>Hipotensja poposiłkowa — dlaczego rodzic słabnie po obiedzie</h3>
             <p>Zasłabnięcie godzinę po posiłku to zwykle nie przypadek. Jak sprawdzić to w trzy dni i co zmienić przy jutrzejszym obiedzie.</p>
             <span class="post__go">Czytaj →</span>
+          </div>
           </a>
 
           <a class="post" href="/blog/fibromialgia-u-opiekunki/">
+            <span class="post__media"><img src="/assets/blog/fibromialgia-opiekunka-dzien-dobry-i-zly.jpg" width="1200" height="800" alt="" loading="lazy" decoding="async"></span>
+            <div class="post__body">
             <span class="post__meta">3 sierpnia 2026 · Zdrowie opiekuna · 16 min</span>
             <h3>Fibromialgia u opiekunki — ból, którego nie widać</h3>
             <p>Pilnujesz każdego objawu u mamy, a własny ból tłumaczysz przemęczeniem. Kryteria rozpoznania, dawkowanie sił i to, co realnie pomaga.</p>
             <span class="post__go">Czytaj →</span>
+          </div>
           </a>
 
           <a class="post" href="/blog/ubieranie-osoby-z-niedowladem/">
+            <span class="post__media"><img src="/assets/blog/ubieranie-og.jpg" width="1200" height="630" alt="" loading="lazy" decoding="async"></span>
+            <div class="post__body">
             <span class="post__meta">2 sierpnia 2026 · Procedury · 8 min</span>
             <h3>Ubieranie rodzica, gdy jedna strona ciała jest słabsza</h3>
             <p>Ubieramy od strony słabszej, rozbieramy od sprawniejszej. Jedna zasada, która chroni bark i skraca poranek o kilka minut.</p>
             <span class="post__go">Czytaj →</span>
+          </div>
           </a>
 
           <a class="post" href="/blog/bol-piety-u-seniora/">
+            <span class="post__media post__media--cover"><img src="/assets/v4/znak.svg" width="72" height="72" alt=""></span>
+            <div class="post__body">
             <span class="post__meta">29 lipca 2026 · Procedury · 9 min</span>
             <h3>Ból pięty u starszej osoby: czym jest „ostroga” i co realnie pomaga</h3>
             <p>„Ostroga” prawie nigdy nie jest przyczyną bólu. Jak rozpoznać wzorzec, co zmienić w domu jeszcze dziś i dlaczego najgroźniejsze jest to, że rodzic zaczyna zostawać w fotelu.</p>
             <span class="post__go">Czytaj →</span>
+          </div>
           </a>
 
         </div>
