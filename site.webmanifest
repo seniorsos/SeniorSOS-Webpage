@@ -5,7 +5,7 @@
   "start_url": "/",
   "display": "browser",
   "background_color": "#F7F2EA",
-  "theme_color": "#F7F2EA",
+  "theme_color": "#2D5A4A",
   "icons": [
     {
       "src": "/assets/v4/znak-192.png",

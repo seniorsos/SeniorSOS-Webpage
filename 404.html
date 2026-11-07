@@ -19,15 +19,15 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="SeniorSOS.health: opieka nad mamą lub tatą w domu. Trzy drogi według pilności i zdjęcie Pawła Rutkowskiego, twórcy strony.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#F7F2EA">
+<meta name="theme-color" content="#2D5A4A">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/assets/v4/znak.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/v4/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="/assets/fonts/dm-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/dm-sans-latin-ext-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/assets/fonts/cormorant-garamond-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/assets/fonts/cormorant-garamond-latin-ext-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/cormorant-garamond-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/cormorant-garamond-latin-ext-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/css/tokens.css?v=4">
 <link rel="stylesheet" href="/css/main.css?v=4">
 <meta name="robots" content="noindex, follow">
@@ -39,16 +39,19 @@
 <header class="nav">
   <div class="wrap nav__in">
     <a class="brand" href="/" aria-label="SeniorSOS.health, strona główna"><img class="brand__mark" src="/assets/v4/znak.svg" width="32" height="32" alt=""><span class="brand__word" aria-hidden="true">Senior<b>SOS</b><span>.health</span></span></a>
+    <p class="nav__tag">Opieka nad rodzicem w&nbsp;domu</p>
     <nav class="nav__menu" aria-label="Menu główne">
       <ul class="nav__links" id="menu">
         <li><a href="/szybka-pomoc/">Szybka pomoc</a></li>
         <li><a href="/blog/">Poradniki</a></li>
         <li><a href="/materialy/">Materiały</a></li>
         <li><a href="/o-mnie/">O mnie</a></li>
-        <li><a href="/kontakt/">Kontakt</a></li>
+        <li class="nav__li-mob"><a href="/kontakt/">Kontakt</a></li>
+        <li class="nav__li-news"><a href="/#newsletter">Newsletter</a></li>
       </ul>
     </nav>
     <a class="sos" href="tel:112" aria-label="Zadzwoń pod numer alarmowy 112"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></svg>112</a>
+    <a class="nav__news" href="/#newsletter"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /><rect x="2" y="4" width="20" height="16" rx="2" /></svg>Newsletter</a>
     <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu"><svg class="i-open" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5h16" /><path d="M4 12h16" /><path d="M4 19h16" /></svg><svg class="i-close" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg><span class="nav__toggle-label">Menu</span></button>
   </div>
 </header>
@@ -120,6 +123,7 @@
   if(!t||!m) return;
   function ustaw(o){ m.classList.toggle('is-open',o); t.setAttribute('aria-expanded',o); }
   t.addEventListener('click',function(){ ustaw(!m.classList.contains('is-open')); });
+  m.addEventListener('click',function(e){ if(e.target.closest('a')) ustaw(false); });
   document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&m.classList.contains('is-open')){ ustaw(false); t.focus(); } });
 })();
 </script>
