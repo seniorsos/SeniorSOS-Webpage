@@ -26,8 +26,11 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preload" href="/assets/fonts/dm-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/dm-sans-latin-ext-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/assets/fonts/cormorant-garamond-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/assets/fonts/cormorant-garamond-latin-ext-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/gelasio-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/gelasio-latin-ext-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" type="image/webp" href="/assets/v4/hero-stol-768.webp" media="(max-width: 767px)" fetchpriority="high">
+<link rel="preload" as="image" type="image/webp" href="/assets/v4/hero-stol-1024.webp" media="(min-width: 768px) and (max-width: 1100px)" fetchpriority="high">
+<link rel="preload" as="image" type="image/webp" href="/assets/v4/hero-stol-1536.webp" media="(min-width: 1101px)" fetchpriority="high">
 <link rel="stylesheet" href="/css/tokens.css?v=4">
 <link rel="stylesheet" href="/css/main.css?v=4">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://seniorsos.health/#website","url":"https://seniorsos.health/","name":"SeniorSOS.health","inLanguage":"pl-PL","publisher":{"@id":"https://seniorsos.health/#organization"}},{"@type":"Organization","@id":"https://seniorsos.health/#organization","name":"SeniorSOS.health","url":"https://seniorsos.health/","logo":{"@type":"ImageObject","url":"https://seniorsos.health/assets/v4/znak-512.png","width":512,"height":512},"founder":{"@id":"https://seniorsos.health/#pawel-rutkowski"},"slogan":"Zawsze blisko. Zawsze bezpiecznie."},{"@type":"Person","@id":"https://seniorsos.health/#pawel-rutkowski","name":"Paweł Rutkowski","description":"W trakcie kształcenia na kierunku opiekun medyczny (MED.14) w Krakowie. Egzamin państwowy: czerwiec 2027.","url":"https://seniorsos.health/o-mnie/","image":"https://seniorsos.health/assets/pawel-rutkowski.jpg","jobTitle":"Twórca SeniorSOS.health","email":"pomoc@seniorsos.health","address":{"@type":"PostalAddress","addressLocality":"Kraków","addressRegion":"małopolskie","addressCountry":"PL"},"sameAs":["https://www.youtube.com/@SeniorSOShealth","https://www.facebook.com/seniorsos.health","https://www.linkedin.com/in/seniorsos-health","https://www.instagram.com/seniorsos_health"]}]}</script>
@@ -38,7 +41,7 @@
 <header class="nav">
   <div class="wrap nav__in">
     <a class="brand" href="/" aria-label="SeniorSOS.health, strona główna"><img class="brand__mark" src="/assets/v4/znak.svg" width="32" height="32" alt=""><span class="brand__word" aria-hidden="true">Senior<b>SOS</b><span>.health</span></span></a>
-    <p class="nav__tag">Opieka nad rodzicem w&nbsp;domu</p>
+    <p class="nav__tag">Opieka rodzin w&nbsp;kryzysie senioralnym</p>
     <nav class="nav__menu" aria-label="Menu główne">
       <ul class="nav__links" id="menu">
         <li><a href="/szybka-pomoc/">Szybka pomoc</a></li>
@@ -57,25 +60,52 @@
 
 <main id="tresc">
 
-  <!-- PIERWSZY EKRAN: pytanie, autor, 112, trzy drzwi według pilności, częste sytuacje.
-       Kolejność w HTML = kolejność na ekranie (telefon i komputer). -->
-  <section class="hero" aria-labelledby="hero-h1">
-    <div class="wrap hero__in">
-      <h1 class="hero__title" id="hero-h1"><span class="hero__line">Mama nie czuje się dobrze.</span> <span class="hero__line">Od czego zacząć?</span></h1>
-      <p class="hero__lead">Spokojne, konkretne wskazówki dla rodzin, które opiekują się bliskimi w&nbsp;domu.</p>
+  <!-- PIERWSZY EKRAN: ciepłe zdjęcie przy stole (ilustracja AI, podpisana), pytanie, wejście do poradników, 112 -->
+  <section class="stage" aria-labelledby="hero-h1">
+    <div class="wrap stage__in">
+      <div class="stage__text">
+        <p class="stage__kicker">Wsparcie<span aria-hidden="true">•</span>Wiedza<span aria-hidden="true">•</span>Praktyka</p>
+        <h1 class="stage__title" id="hero-h1"><span class="stage__line">Mama nie czuje się dobrze.</span> <span class="stage__line">Od&nbsp;czego <span class="swash">zacząć?<svg viewBox="0 0 215 24" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M3 20 Q108 -7 211 17" fill="none" stroke="#EC8A13" stroke-width="6" stroke-linecap="round"/></svg></span></span></h1>
+        <p class="stage__lead">Spokojne, konkretne wskazówki dla rodzin, które opiekują się bliskimi w&nbsp;domu.</p>
+        <div class="stage__acts">
+          <a class="stage__cta" href="/blog/"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v16" /><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" /></svg>Znajdź potrzebne wskazówki<svg class="arr" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></a>
+          <a class="sospill" href="tel:112"><span class="sospill__num"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></svg>112</span><span class="sospill__txt">W&nbsp;sytuacji zagrożenia życia dzwoń od razu</span></a>
+        </div>
+      </div>
+    </div>
+    <figure class="stage__media">
+      <picture>
+        <source type="image/webp" srcset="/assets/v4/hero-stol-768.webp 768w, /assets/v4/hero-stol-1024.webp 1024w, /assets/v4/hero-stol-1536.webp 1536w" sizes="100vw">
+        <img src="/assets/v4/hero-stol-1024.jpg" srcset="/assets/v4/hero-stol-768.jpg 768w, /assets/v4/hero-stol-1024.jpg 1024w, /assets/v4/hero-stol-1536.jpg 1536w" sizes="100vw" width="1536" height="1024" fetchpriority="high" decoding="async" alt="Ilustracja wygenerowana z pomocą AI: opiekun w granatowym stroju medycznym trzyma za rękę starszą kobietę przy drewnianym stole w słonecznej kuchni. Oboje się uśmiechają.">
+      </picture>
+      <figcaption class="stage__ai">Ilustracja wygenerowana z&nbsp;pomocą AI</figcaption>
+    </figure>
+  </section>
 
-      <figure class="author">
-        <picture><source media="(min-width: 960px)" srcset="/assets/pawel-rutkowski.jpg" width="640" height="800"><img class="author__photo" src="/assets/v4/pawel-rutkowski-avatar-320.jpg" width="320" height="320" alt="Paweł Rutkowski uśmiecha się do aparatu. Ma okulary i granatowy strój medyczny." fetchpriority="high"></picture>
-        <figcaption class="author__card">
-          <span class="author__name">Paweł Rutkowski</span>
-          <span class="author__role">Twórca SeniorSOS.health</span>
-          <span class="author__fact"><strong>Ponad dwa lata</strong> opieki nad mamą w&nbsp;domu</span>
-          <a class="author__more" href="/o-mnie/">O&nbsp;mnie i&nbsp;skąd biorę wiedzę</a>
-        </figcaption>
-      </figure>
+  <section class="nl nl--stage" id="newsletter" aria-labelledby="nl-h">
+    <div class="wrap">
+      <div class="nl__card">
+        <picture><source type="image/webp" srcset="/assets/v4/koperta-240.webp 240w, /assets/v4/koperta-480.webp 480w" sizes="(min-width: 1000px) 150px, 78px"><img class="nl__art" src="/assets/v4/koperta-240.png" srcset="/assets/v4/koperta-240.png 240w, /assets/v4/koperta-480.png 480w" sizes="(min-width: 1000px) 150px, 78px" width="240" height="213" alt="" loading="lazy" decoding="async"></picture>
+        <div class="nl__text">
+          <h2 id="nl-h">Jedna dobra wskazówka co czwartek.</h2>
+          <p class="nl__lead">Praktyczna procedura, którą od razu możesz wykorzystać w&nbsp;domu.</p>
+        </div>
+        <div class="nl__act">
+          <form class="nl__form" action="mailto:pomoc@seniorsos.health?subject=NEWSLETTER" method="post" enctype="text/plain" data-nl>
+            <label class="nl__field"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /><rect x="2" y="4" width="20" height="16" rx="2" /></svg><span class="vh">Twój adres e-mail</span><input type="email" name="adres" required autocomplete="email" placeholder="Twój adres e-mail"></label>
+            <button class="nl__btn" type="submit">Zapisuję się<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></button>
+          </form>
+          <p class="nl__status" role="status" aria-live="polite"></p>
+          <ul class="nl__perks"><li><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5" /></svg>Bez spamu</li><li><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5" /></svg>Bez reklam</li><li><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5" /></svg>Rezygnujesz, kiedy chcesz</li></ul>
+          <p class="nl__how">Przycisk otworzy maila z&nbsp;tematem <strong>NEWSLETTER</strong>. Wyślij go, a&nbsp;potwierdzę zapis odpowiedzią. Poczta się nie otwiera? Napisz na <a href="mailto:pomoc@seniorsos.health?subject=NEWSLETTER">pomoc@seniorsos.health</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <a class="sospill" href="tel:112"><span class="sospill__num"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></svg>112</span><span class="sospill__txt">W&nbsp;sytuacji zagrożenia życia dzwoń od razu</span></a>
-
+  <!-- TRZY DRZWI według pilności i częste sytuacje -->
+  <section class="home-doors">
+    <div class="wrap">
       <nav class="doorpanel" aria-labelledby="drzwi-h">
         <h2 class="doorpanel__title" id="drzwi-h">Co możesz zrobić teraz?</h2>
         <ul class="doors">
@@ -110,23 +140,6 @@
         <a class="chip" href="/szybka-pomoc/#goraczka">Gorączka</a>
         <a class="chip" href="/blog/alzheimer-w-domu/">Problemy z&nbsp;pamięcią</a>
       </nav>
-    </div>
-  </section>
-
-  <section class="nl" id="newsletter" aria-labelledby="nl-h">
-    <div class="wrap">
-      <div class="nl__card">
-        <svg class="nl__art" viewBox="0 0 96 84" width="96" height="84" aria-hidden="true" focusable="false"><path d="M8 38 48 10l40 28v38a5 5 0 0 1-5 5H13a5 5 0 0 1-5-5z" fill="#D9CDBA"/><rect x="20" y="16" width="56" height="46" rx="4" fill="#FFFDF9"/><path d="M48 49c-6.6-4.5-10.6-8.1-10.6-12.4 0-3.1 2.4-5.5 5.4-5.5 2.2 0 4.1 1.2 5.2 3.1 1.1-1.9 3-3.1 5.2-3.1 3 0 5.4 2.4 5.4 5.5 0 4.3-4 7.9-10.6 12.4z" fill="#D1A05E"/><path d="M8 42v34a5 5 0 0 0 5 5h70a5 5 0 0 0 5-5V42L48 66z" fill="#F7F2EA"/><path d="M11 79 39 58M85 79 57 58" fill="none" stroke="#D9CDBA" stroke-width="2" stroke-linecap="round"/></svg>
-        <div class="nl__text">
-          <h2 id="nl-h">Jedna dobra wskazówka co czwartek.</h2>
-          <p class="nl__lead">Praktyczna procedura, którą od razu możesz wykorzystać w&nbsp;domu.</p>
-        </div>
-        <div class="nl__act">
-          <a class="btn btn--accent nl__btn" href="mailto:pomoc@seniorsos.health?subject=NEWSLETTER">Zapisuję się<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg></a>
-          <p class="nl__note"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /><path d="m9 12 2 2 4-4" /></svg>Bez spamu. Bez reklam. Rezygnujesz, kiedy chcesz.</p>
-          <p class="nl__how">Przycisk otwiera maila z&nbsp;tematem <strong>NEWSLETTER</strong>. Wyślij go, a&nbsp;potwierdzę zapis odpowiedzią. Poczta się nie otwiera? Napisz na <a href="mailto:pomoc@seniorsos.health?subject=NEWSLETTER">pomoc@seniorsos.health</a>.</p>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -172,7 +185,7 @@
           </a></li>
         </ul>
       </div>
-      <p class="latest__note">Ilustracje we wpisach są wygenerowane z&nbsp;pomocą AI. Zdjęcie autora jest prawdziwe.</p>
+      <p class="latest__note">Ilustracje na stronie, także ta na samej górze, są wygenerowane z&nbsp;pomocą AI. Moje prawdziwe zdjęcie jest niżej, przy cytacie, i&nbsp;na stronie O&nbsp;mnie.</p>
     </div>
   </section>
 
@@ -182,7 +195,7 @@
       <div class="trust__lead">
         <h2 class="vh" id="trust-h">Jak tu pracuję</h2>
         <blockquote class="trust__quote"><p>„Uczę się tego zawodu i&nbsp;opisuję drogę na bieżąco, razem z&nbsp;tym, czego jeszcze nie umiem.”</p></blockquote>
-        <p class="trust__sign"><strong>Paweł Rutkowski</strong>Twórca SeniorSOS.health</p>
+        <p class="trust__sign"><img class="trust__face" src="/assets/v4/pawel-rutkowski-avatar-320.jpg" width="320" height="320" alt="Paweł Rutkowski, prawdziwe zdjęcie" loading="lazy" decoding="async"><span><strong>Paweł Rutkowski</strong>Twórca SeniorSOS.health</span></p>
       </div>
       <div>
         <ul class="principles">
@@ -245,6 +258,19 @@
   t.addEventListener('click',function(){ ustaw(!m.classList.contains('is-open')); });
   m.addEventListener('click',function(e){ if(e.target.closest('a')) ustaw(false); });
   document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&m.classList.contains('is-open')){ ustaw(false); t.focus(); } });
+})();
+</script>
+<script>
+(function(){
+  var f=document.querySelector('form[data-nl]'); if(!f) return;
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var a=f.querySelector('input[type=email]').value.trim();
+    var s=f.parentNode.querySelector('.nl__status');
+    if(s) s.textContent='Otwieram program pocztowy. Wyślij przygotowaną wiadomość, a potwierdzę zapis.';
+    location.href='mailto:pomoc@seniorsos.health?subject=NEWSLETTER&body='+encodeURIComponent('Proszę o zapis na newsletter SeniorSOS.health.
+Adres: '+a);
+  });
 })();
 </script>
 
