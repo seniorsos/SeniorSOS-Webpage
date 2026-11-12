@@ -1,8 +1,10 @@
 # SeniorSOS.health
 
 > Polskojęzyczna platforma edukacyjna o opiece domowej nad starszym rodzicem.
-> Prowadzi Paweł Rutkowski (Kraków) — w trakcie kształcenia na kierunku
-> opiekun medyczny, kwalifikacja MED.14, egzamin państwowy: czerwiec 2027.
+> Prowadzi Paweł Rutkowski (Kraków), twórca SeniorSOS.health — ponad dwa lata
+> opieki nad mamą w domu, praktyka w placówce opiekuńczej; w lutym 2026
+> rozpoczął naukę w zawodzie opiekuna medycznego (kwalifikacja MED.14),
+> nie ma jeszcze uprawnień opiekuna medycznego.
 > Zakres: procedury opiekuńcze i higieniczne, sytuacje kryzysowe w domu,
 > formalności. Zakres wyłączony: leki, dawkowanie, diagnostyka, leczenie.
 
@@ -14,7 +16,7 @@
 - [Zespół zachodzącego słońca](https://seniorsos.health/blog/zespol-zachodzacego-slonca/): wieczorny niepokój w demencji (sundowning) — mechanizm, protokół zmierzchu w 5 krokach, odróżnienie od majaczenia
 - [Trudne zachowania w Alzheimerze](https://seniorsos.health/blog/trudne-zachowania-alzheimer/): krzyk, odpychanie, oskarżenia o kradzież jako komunikat — lista przyczyn (ból, pęcherz, zaparcie, otoczenie, opiekun), metoda 4 kroków (DICE), tabela „zamiast tego — powiedz to”, dzienniczek, kiedy 112 i kiedy lekarz tego samego dnia (majaczenie)
 - [Jak rozmawiać z mamą z Alzheimerem](https://seniorsos.health/blog/jak-rozmawiac-z-mama-z-alzheimerem/): 7 zasad komunikacji z osobą z chorobą Alzheimera — krótkie zdania, wybór z dwóch zamiast pytań otwartych („plecy czy nogi?”), czas i powtarzanie tymi samymi słowami, prośba o pokazanie, odpowiedź na uczucie (walidacja — dowody: Cochrane 2003 niewystarczające), tabela „zamiast tego — powiedz to”, kiedy 112 (nagła zmiana mowy, objawy udaru)
-- [Worek na mocz w domu](https://seniorsos.health/blog/worek-na-mocz-w-domu/): z zajęć MED.14 — opróżnianie worka przez kranik bez odłączania od cewnika (najpóźniej przy 2/3), wymiana krok po kroku z kleszczykiem, worek zawsze poniżej pęcherza, co zrobić, gdy mocz nie spływa (próg 4 godzin), zapis diurezy, refundacja NFZ (Y.04.01: do 12 szt./miesiąc, limit 6,50 zł), kiedy pielęgniarka/lekarz bez zwłoki i kiedy 112; źródła: CDC 2009, IDSA 2009, Willson 2009, zalecenia MCO Kraków
+- [Worek na mocz w domu](https://seniorsos.health/blog/worek-na-mocz-w-domu/): procedura krok po kroku — opróżnianie worka przez kranik bez odłączania od cewnika (najpóźniej przy 2/3), wymiana krok po kroku z kleszczykiem, worek zawsze poniżej pęcherza, co zrobić, gdy mocz nie spływa (próg 4 godzin), zapis diurezy, refundacja NFZ (Y.04.01: do 12 szt./miesiąc, limit 6,50 zł), kiedy pielęgniarka/lekarz bez zwłoki i kiedy 112; źródła: CDC 2009, IDSA 2009, Willson 2009, zalecenia MCO Kraków
 - [Jak pytać AI o mamę z demencją](https://seniorsos.health/blog/jak-pytac-ai-o-mame-z-demencja/): 4 zasady pytania czatu AI o chorego rodzica, gotowy szablon pytania, granica: kiedy 112 zamiast czatu; na podstawie badania Aguirre i in., JMIR Aging 2024
 - [Hipotensja poposiłkowa](https://seniorsos.health/blog/hipotensja-poposilkowa/): spadek ciśnienia po posiłku u osób starszych, test trzech pomiarów, zapobieganie upadkom
 - [Fibromialgia u opiekunki](https://seniorsos.health/blog/fibromialgia-u-opiekunki/): zdrowie opiekuna — ból przewlekły, dawkowanie sił
