@@ -2,9 +2,9 @@
 
 > Polskojęzyczna platforma edukacyjna o opiece domowej nad starszym rodzicem.
 > Prowadzi Paweł Rutkowski (Kraków), twórca SeniorSOS.health — ponad dwa lata
-> opieki nad mamą w domu, praktyka w placówce opiekuńczej; w lutym 2026
-> rozpoczął naukę w zawodzie opiekuna medycznego (kwalifikacja MED.14),
-> nie ma jeszcze uprawnień opiekuna medycznego.
+> opieki nad mamą w domu, praktyka w placówce opiekuńczej; ma za sobą część
+> kształcenia w zawodzie opiekuna medycznego (kwalifikacja MED.14),
+> nie ma uprawnień opiekuna medycznego.
 > Zakres: procedury opiekuńcze i higieniczne, sytuacje kryzysowe w domu,
 > formalności. Zakres wyłączony: leki, dawkowanie, diagnostyka, leczenie.
 
