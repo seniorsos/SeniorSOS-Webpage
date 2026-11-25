@@ -85,6 +85,8 @@
         <p><strong>Choroba Alzheimera zmienia to, jak mama widzi mieszkanie: ciemna mata może wyglądać jak dziura, błyszcząca podłoga jak kałuża, a drzwi wyjściowe jak droga „do domu”.</strong> Bezpieczny dom nie oznacza remontu ani zamykania wszystkiego na klucz. Zabezpieczasz to, co realnie grozi: kuchenkę, chemię i leki (w jednym zamykanym miejscu), drogę do łazienki w nocy i wyjście z domu.</p>
         <p>Resztę dopasowujesz stopniowo, w miarę postępu choroby. Gdy mama zaginie, nie czekasz 24 godzin. Zgłaszasz od razu, dzwoniąc na 112.</p>
       </div>
+      <p class="printbar"><button type="button" class="printbtn js-drukuj"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>Wydrukuj poradnik</button></p>
+
 
       <h2>Godzina 17:00. Mama w płaszczu przy drzwiach</h2>
 
@@ -512,5 +514,16 @@ Adres: '+a);
 })();
 </script>
 <!-- /udostepnianie-telefon -->
+<!-- drukowanie -->
+<script>
+(function(){
+  document.querySelectorAll('.js-drukuj').forEach(function(b){ b.addEventListener('click',function(){ window.print(); }); });
+  var s=document.querySelector('.js-drukuj-sciage'), h=document.documentElement;
+  if(!s) return;
+  s.addEventListener('click',function(){ h.classList.add('druk-sciaga'); window.print(); });
+  window.addEventListener('afterprint',function(){ h.classList.remove('druk-sciaga'); });
+})();
+</script>
+<!-- /drukowanie -->
 </body>
 </html>

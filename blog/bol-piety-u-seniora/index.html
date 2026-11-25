@@ -78,6 +78,8 @@
         <p>Ból pięty u starszej osoby prawie nigdy nie bierze się z „ostrogi”. Ostroga to kostny narost, który u wielu osób w ogóle nie boli. Winowajcą jest zwykle <strong>przeciążone rozcięgno podeszwowe</strong> — pasmo tkanki biegnące wzdłuż spodu stopy. Charakterystyczny sygnał: ból najsilniejszy przy pierwszych krokach rano, słabnący po kilkunastu krokach.</p>
         <p>Co pomaga najbardziej i najszybciej: <strong>domowe obuwie z amortyzującą podeszwą zamiast chodzenia boso</strong>, poranne rozciąganie stopy jeszcze przed wstaniem z łóżka i odciążenie bez unieruchomienia. Postęp mierzy się w tygodniach, nie w dniach.</p>
       </div>
+      <p class="printbar"><button type="button" class="printbtn js-drukuj"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>Wydrukuj poradnik</button></p>
+
 
       <p>6:30 rano. Mama wstaje z łóżka, stawia pierwszy krok — i przystaje. Łapie się ściany. „Boli jak igła, w samej pięcie.” Po kilku krokach trochę odpuszcza, więc machasz ręką: pewnie odleżała, przejdzie. Ale następnego ranka jest tak samo. I jeszcze następnego.</p>
 
@@ -307,5 +309,16 @@
 })();
 </script>
 <!-- /udostepnianie-telefon -->
+<!-- drukowanie -->
+<script>
+(function(){
+  document.querySelectorAll('.js-drukuj').forEach(function(b){ b.addEventListener('click',function(){ window.print(); }); });
+  var s=document.querySelector('.js-drukuj-sciage'), h=document.documentElement;
+  if(!s) return;
+  s.addEventListener('click',function(){ h.classList.add('druk-sciaga'); window.print(); });
+  window.addEventListener('afterprint',function(){ h.classList.remove('druk-sciaga'); });
+})();
+</script>
+<!-- /drukowanie -->
 </body>
 </html>

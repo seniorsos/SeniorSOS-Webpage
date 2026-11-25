@@ -86,6 +86,8 @@
         <p><strong>Zespół zachodzącego słońca (ang. <em>sundowning</em>) to nasilenie niepokoju, splątania i pobudzenia u osoby z otępieniem późnym popołudniem i wieczorem.</strong> To nie złośliwość ani „trudny charakter”, tylko skutek zmian w mózgu: słabnie zegar biologiczny, pod wieczór kończą się siły, a w półmroku wzrok zaczyna oszukiwać.</p>
         <p>W badaniu rzymskiej poradni pamięci dotyczył co piątego pacjenta z otępieniem. Najwięcej pomaga to, co robisz, zanim zrobi się szaro: światło zapalone jeszcze za dnia, spokojny i stały wieczór, trudne sprawy przeniesione na lepszą porę i rozmowa bez prostowania. Jeśli zmiana pojawiła się nagle, w ciągu godzin lub dni, to może być majaczenie, a nie zachodzące słońce. Wtedy dzwoń do lekarza tego samego dnia.</p>
       </div>
+      <p class="printbar"><button type="button" class="printbtn js-drukuj"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>Wydrukuj poradnik</button></p>
+
 
       <p>Ten poradnik otwiera serię <a href="/blog/alzheimer-w-domu/">Alzheimer w domu</a>. Zaczynam od wieczoru, bo to pora, o której rodziny piszą do mnie najczęściej, i pora, w której najłatwiej pomylić chorobę z charakterem.</p>
 
@@ -409,5 +411,16 @@ Adres: '+a);
 })();
 </script>
 <!-- /udostepnianie-telefon -->
+<!-- drukowanie -->
+<script>
+(function(){
+  document.querySelectorAll('.js-drukuj').forEach(function(b){ b.addEventListener('click',function(){ window.print(); }); });
+  var s=document.querySelector('.js-drukuj-sciage'), h=document.documentElement;
+  if(!s) return;
+  s.addEventListener('click',function(){ h.classList.add('druk-sciaga'); window.print(); });
+  window.addEventListener('afterprint',function(){ h.classList.remove('druk-sciaga'); });
+})();
+</script>
+<!-- /drukowanie -->
 </body>
 </html>

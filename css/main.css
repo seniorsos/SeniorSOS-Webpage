@@ -690,3 +690,24 @@ body.has-sosbar .nav .sos{display:none}
   .alarm *{color:#000!important}
   a{color:#000;text-decoration:none}
 }
+
+/* drukowanie: przycisk i ściąga (25.11.2026) */
+.printbar{margin:-1.2rem 0 2.2rem}
+.sciaga .printbar{margin:1rem 0 0}
+.printbtn{display:inline-flex;align-items:center;gap:.55rem;min-height:48px;padding:0 1.2rem;border:1.5px solid var(--accent-dark);border-radius:var(--r-pill);background:transparent;color:var(--ink);font:600 1rem/1.2 var(--body);cursor:pointer}
+.printbtn:hover{background:var(--accent-light)}
+.printbtn:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.sciaga__druk{display:none}
+@media print{
+  .printbar,.phead__fig,.article__hero,.nl{display:none!important}
+  .phead__duo{display:block!important}
+  .prose{overflow:visible!important}
+  tr,.proc,.faq,.quick,.alarm{break-inside:avoid}
+  h2,h3{break-after:avoid}
+  html.druk-sciaga .nav,html.druk-sciaga .crumbs,html.druk-sciaga .phead,html.druk-sciaga .foot{display:none!important}
+  html.druk-sciaga main>:not(.article){display:none!important}
+  html.druk-sciaga .article__body>:not(.sciaga){display:none!important}
+  html.druk-sciaga .sciaga h2{margin-top:0}
+  html.druk-sciaga .sciaga table{font-size:11pt}
+  html.druk-sciaga .sciaga__druk{display:block;margin-top:.8rem;font-size:9.5pt}
+}

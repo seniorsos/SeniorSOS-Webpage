@@ -83,6 +83,8 @@
         <p><strong>Choroba Alzheimera to postępująca choroba mózgu, a nie zwykłe starzenie się.</strong> Białka odkładające się w mózgu stopniowo niszczą komórki nerwowe, najpierw w obszarze odpowiedzialnym za zapamiętywanie nowych informacji. Według Światowej Organizacji Zdrowia odpowiada za 60–70% wszystkich przypadków otępienia.</p>
         <p>Choroba przebiega w trzech etapach: wczesnym, środkowym i późnym. Średnio trwa od 4 do 8 lat od diagnozy, choć bywa, że nawet 20. Ten przewodnik prowadzi Cię przez etapy, pierwsze kroki po diagnozie i sygnały, przy których nie wolno czekać. Najważniejsza zasada: <strong>powolne zmiany omawiasz na wizycie, a nagła zmiana w ciągu godzin lub dni to zawsze powód do pilnego kontaktu z lekarzem.</strong></p>
       </div>
+      <p class="printbar"><button type="button" class="printbtn js-drukuj"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>Wydrukuj poradnik</button></p>
+
 
       <h2>Od czego zaczyna się ta droga</h2>
 
@@ -401,5 +403,16 @@ Adres: '+a);
 })();
 </script>
 <!-- /udostepnianie-telefon -->
+<!-- drukowanie -->
+<script>
+(function(){
+  document.querySelectorAll('.js-drukuj').forEach(function(b){ b.addEventListener('click',function(){ window.print(); }); });
+  var s=document.querySelector('.js-drukuj-sciage'), h=document.documentElement;
+  if(!s) return;
+  s.addEventListener('click',function(){ h.classList.add('druk-sciaga'); window.print(); });
+  window.addEventListener('afterprint',function(){ h.classList.remove('druk-sciaga'); });
+})();
+</script>
+<!-- /drukowanie -->
 </body>
 </html>

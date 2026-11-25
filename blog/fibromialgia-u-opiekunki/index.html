@@ -86,6 +86,8 @@
         <p><strong>Fibromialgia to przewlekła choroba, w której układ nerwowy wzmacnia odbiór bólu — ból jest rozlany, realny i nie zostawia śladów w badaniach.</strong> Rozpoznaje się ją na podstawie kryteriów ACR 2016: ból obejmujący co najmniej cztery z pięciu okolic ciała, utrzymujący się od minimum trzech miesięcy, wraz ze zmęczeniem, nieregenerującym snem i trudnościami z koncentracją.</p>
         <p>U osoby opiekującej się rodzicem objawy bywają latami tłumaczone przemęczeniem, dlatego pierwszym krokiem jest ich zapisanie i pokazanie lekarzowi. Fibromialgia nie niszczy stawów ani narządów, a najlepiej udokumentowaną metodą postępowania jest stopniowany, regularny ruch.</p>
       </div>
+      <p class="printbar"><button type="button" class="printbtn js-drukuj"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>Wydrukuj poradnik</button></p>
+
 
       <p>Od miesięcy pilnujesz każdego objawu u mamy. Zapisujesz ciśnienie, patrzysz na apetyt, dzwonisz do lekarza, gdy coś Cię zaniepokoi. A kiedy Twoje własne ciało od tygodni budzi się obolałe i wyczerpane — machasz ręką. <em>Przemęczenie. Wiek. Przejdzie.</em></p>
 
@@ -446,5 +448,16 @@ Adres: '+a);
 })();
 </script>
 <!-- /udostepnianie-telefon -->
+<!-- drukowanie -->
+<script>
+(function(){
+  document.querySelectorAll('.js-drukuj').forEach(function(b){ b.addEventListener('click',function(){ window.print(); }); });
+  var s=document.querySelector('.js-drukuj-sciage'), h=document.documentElement;
+  if(!s) return;
+  s.addEventListener('click',function(){ h.classList.add('druk-sciaga'); window.print(); });
+  window.addEventListener('afterprint',function(){ h.classList.remove('druk-sciaga'); });
+})();
+</script>
+<!-- /drukowanie -->
 </body>
 </html>
